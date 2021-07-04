@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class NestScript : MonoBehaviour
 {
-    public GameObject Monster;
-    // public envionment!! 
+    public string Monster;
+
     public int maxDistance;
     public int currentDistance;
 
