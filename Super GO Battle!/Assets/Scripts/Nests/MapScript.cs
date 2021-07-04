@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class MapScript : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class MapScript : MonoBehaviour
 
     private float notRoundedDistance; //The number of KM between each map - to be stored in a nest. Also randomly generated and needs to be rounded up
     public List<int> distances = new List<int>(); //Said rounded up KM number.
+    private Vector3 oldDistance;
+    bool spawnedOne = false;
+
+    private int counter;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -39,7 +44,7 @@ public class MapScript : MonoBehaviour
     private void Start()
     {
         difficulty = Random.Range(1f, 3f);
-        nestCount = Random.Range(3, 5) * difficulty;
+        nestCount = Random.Range(4, 5) * difficulty;
         roundedNestCount = (Mathf.RoundToInt(nestCount));
 
         selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
@@ -55,9 +60,26 @@ public class MapScript : MonoBehaviour
 
             LocalNest = Nest;
 
-            Nest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
-            Nest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
-            Instantiate(Nest, new Vector3(0, 0, 0), Quaternion.identity, this.gameObject.transform);
+            LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
+            LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
+
+            if(spawnedOne == false)
+            {
+                LocalNest.name = "Nest " + counter.ToString();
+                Instantiate(LocalNest, oldDistance = new Vector3 (0, -105, 0), Quaternion.identity, this.gameObject.transform);
+                spawnedOne = true;
+                counter += 1;
+            }
+
+            else
+            {
+                LocalNest.name = "Nest " + counter.ToString();
+                Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50,50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform);
+                Debug.Log(Mathf.RoundToInt(notRoundedDistance) * 10);
+                counter += 1;
+            }
+
+            //ADD ABILITY TO REMOVE NUMBER FROM ODDS ONCE IT'S SELECTED!
         }
 
         foreach (var x in monsterList)
