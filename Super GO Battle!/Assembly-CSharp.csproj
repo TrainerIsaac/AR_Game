@@ -56,24 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Attack Attributes\Whirlwind.cs" />
-    <Compile Include="Assets\Scripts\Attack Attributes\ProjectileScript.cs" />
-    <Compile Include="Assets\Scripts\Attack Attributes\Ground Spikes.cs" />
-    <Compile Include="Assets\Scripts\StateMachine.cs" />
-    <Compile Include="Assets\Scripts\Attacks\BulletBarrage.cs" />
-    <Compile Include="Assets\Testing.cs" />
-    <Compile Include="Assets\Scripts\PlayerScript.cs" />
-    <Compile Include="Assets\Rock.cs" />
-    <Compile Include="Assets\Scripts\LightEstimation.cs" />
-    <Compile Include="Assets\CloseAttack.cs" />
-    <Compile Include="Assets\Scripts\Attack Attributes\Hurricane.cs" />
-    <Compile Include="Assets\Cooldown.cs" />
-    <Compile Include="Assets\Scripts\Attack Attributes\Rapid Fire.cs" />
-    <Compile Include="Assets\RapidFire.cs" />
+    <Compile Include="Assets\Scripts\AR\Enemy.cs" />
     <Compile Include="Assets\TutorialTesting.cs" />
+    <Compile Include="Assets\Scripts\AR\Attack Attributes\Whirlwind.cs" />
+    <Compile Include="Assets\Scripts\AR\Attack Attributes\ProjectileScript.cs" />
+    <Compile Include="Assets\Scripts\AR\Attack Attributes\Ground Spikes.cs" />
+    <Compile Include="Assets\Scripts\AR\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\AR\Attacks\BulletBarrage.cs" />
     <Compile Include="Assets\MoveScenes.cs" />
+    <Compile Include="Assets\Testing.cs" />
+    <Compile Include="Assets\Scripts\AR\PlayerScript.cs" />
+    <Compile Include="Assets\Rock.cs" />
+    <Compile Include="Assets\Scripts\AR\LightEstimation.cs" />
+    <Compile Include="Assets\CloseAttack.cs" />
+    <Compile Include="Assets\Scripts\AR\Attack Attributes\Hurricane.cs" />
+    <Compile Include="Assets\Cooldown.cs" />
     <Compile Include="Assets\SliderValueToText.cs" />
+    <Compile Include="Assets\Scripts\AR\Attack Attributes\Rapid Fire.cs" />
+    <Compile Include="Assets\RapidFire.cs" />
+    <Compile Include="Assets\Scripts\Nests\NestScript.cs" />
+    <Compile Include="Assets\Scripts\Nests\MapScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Models\Placeholders\Solrock\Tag.txt" />
