@@ -331,8 +331,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872813865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5161, y: 2.6918356, z: 1.5161}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1.903312, y: 3.3793304, z: 1.903312}
   m_Children: []
   m_Father: {fileID: 1821329717}
   m_RootOrder: 0
@@ -570,6 +570,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821329717}
     m_Modifications:
+    - target: {fileID: 1834321305790379903, guid: 948a3f14acf99d64f821db3070069c19,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4f2a1a2e32307a48a7ff5ee4314aded, type: 2}
+    - target: {fileID: 1834321305790379903, guid: 948a3f14acf99d64f821db3070069c19,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834321305790379903, guid: 948a3f14acf99d64f821db3070069c19,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834321305790379903, guid: 948a3f14acf99d64f821db3070069c19,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.059423923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834321305790379903, guid: 948a3f14acf99d64f821db3070069c19,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6392759877784771908, guid: 948a3f14acf99d64f821db3070069c19,
         type: 3}
       propertyPath: m_Pivot.x

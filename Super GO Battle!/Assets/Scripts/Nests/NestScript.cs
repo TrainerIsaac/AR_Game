@@ -8,10 +8,17 @@ public class NestScript : MonoBehaviour
 
     public int maxDistance;
     public int currentDistance;
+    public Vector3 oldPos;
 
     void Start()
     {
         maxDistance = Random.Range(1, 5);   //Multiply by difficulty modifier - perhaps have script assigned to each map that sets things like difficulty and potential species?
+        if(oldPos != new Vector3 (0,0,0))
+        {
+            gameObject.GetComponent<LineRenderer>().enabled = true;
+        }
+        gameObject.GetComponent<LineRenderer>().SetPosition(0, oldPos);
+        gameObject.GetComponent<LineRenderer>().SetPosition(1, this.gameObject.transform.position);
         //uses distance generated from MapScript. 
         //Keeps track of current KM Walked. Can have max - current taken away from banked distance.
     }
