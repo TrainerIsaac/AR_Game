@@ -8,8 +8,8 @@ public class MapScript : MonoBehaviour
     public GameObject Nest;
     private GameObject LocalNest;
 
-    public string[][][] environments = new string[][][] {    
-    
+    public string[][][] environments = new string[][][] {
+
     new string[][] { new string[] { "pidgeon", "Gull", "Eagle", "plane", "Hot Air Balloon", "Blimp" }, new string[] { "god", "Jesus" } }, //Sky World
     new string[][] { new string[] { "Rock Man", "Lava Blob", "Fire Bat", "Burning Bug", "Diamond Dude", "Demon" }, new string[] { "Devil", "Satan" } }, //Under Ground
     new string[][] { new string[] { "fly", "spider", "dragonfly", "Leaf Bug", "Tarantula", "Ogre" }, new string[] { "Shrek", "Donkey" } } //Forest
@@ -43,7 +43,11 @@ public class MapScript : MonoBehaviour
 
     private int branchCounter;
     private int branchTotal;
-   
+
+    private Collider2D localCollider;
+    private List<Vector3> placedNests = new List<Vector3>();
+
+    private int testicle;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -83,14 +87,20 @@ public class MapScript : MonoBehaviour
             if (counter == 0)
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                Instantiate(LocalNest, oldDistance = new Vector3 (0, -105, 0), Quaternion.identity, this.gameObject.transform);
+                Instantiate(LocalNest, oldDistance = new Vector3(0, -105, 0), Quaternion.identity, this.gameObject.transform);
+                placedNests.Add(oldDistance);
+                GetUnnocupiedSpace();
+                //AA
                 counter += 1;
             }
 
             else
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50,50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
+                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
+                placedNests.Add(oldDistance);
+                GetUnnocupiedSpace();
+                //AA
                 counter += 1;
             }
         }
@@ -101,7 +111,7 @@ public class MapScript : MonoBehaviour
 
         for (int k = 0; k < branchTotal; k++)
         {
-            Wario();
+            GetUnusedNest();
             oldDistance = randomNest.transform.position;
             for (int i = 0; i < (nestList.Count - (nestList.IndexOf(randomNest))); i++)
             {
@@ -121,7 +131,7 @@ public class MapScript : MonoBehaviour
 
                 LocalNest = Nest;
 
-                
+
                 LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
                 LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
                 LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
@@ -129,6 +139,10 @@ public class MapScript : MonoBehaviour
                 LocalNest.name = LocalNest.name.Replace("(Clone)", "").Trim();
 
                 Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
+                placedNests.Add(oldDistance);
+                GetUnnocupiedSpace();
+                //AA
+
                 counter += 1;
                 branchCounter += 1;
             }
@@ -138,7 +152,7 @@ public class MapScript : MonoBehaviour
 
     }
 
-    void Wario()
+    void GetUnusedNest()
     {
         if (hasBranch.Count + 1 == roundedNestCount)
         {
@@ -148,9 +162,39 @@ public class MapScript : MonoBehaviour
         randomNest = nestList[Random.Range(0, nestList.Count)];
         if (hasBranch.Contains(randomNest))
         {
-            Wario();
+            GetUnusedNest();
         }
     }
+
+    void GetUnnocupiedSpace()
+    {
+
+        for (int testicle = 0; testicle < placedNests.Count; testicle++)
+        {
+            if (LocalNest.GetComponent<CircleCollider2D>().OverlapPoint(new Vector2(placedNests[testicle].x, placedNests[testicle].y)))
+            {
+                Debug.Log("Re-Locating");
+                Test();
+            }
+            else
+            {
+            }
+        }
+    }
+    
+    void Test()
+    {
+        LocalNest.transform.position = new Vector3(Random.Range(100,100), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 100, 0);
+        if (LocalNest.GetComponent<CircleCollider2D>().OverlapPoint(new Vector2(placedNests[testicle].x, placedNests[testicle].y)))
+        {
+            Debug.Log("Re-Re-Locating");
+            Test();
+        }
+        else
+        {
+        }
+    }
+
 }
 
 //Impliment multiple branches occuring rather than just one every time.

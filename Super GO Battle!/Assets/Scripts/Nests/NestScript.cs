@@ -9,6 +9,7 @@ public class NestScript : MonoBehaviour
     public int maxDistance;
     public int currentDistance;
     public Vector3 oldPos;
+    public bool overlapping = false;
 
     void Start()
     {
