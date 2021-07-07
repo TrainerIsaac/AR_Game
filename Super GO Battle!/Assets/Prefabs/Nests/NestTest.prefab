@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: spider
-  maxDistance: 3
+  Monster: pidgeon
+  maxDistance: 1
   currentDistance: 0
-  oldPos: {x: 12, y: 75.49202, z: 0}
+  oldPos: {x: 46, y: 169.02664, z: 0}
 --- !u!120 &1834321305790379903
 LineRenderer:
   m_ObjectHideFlags: 0

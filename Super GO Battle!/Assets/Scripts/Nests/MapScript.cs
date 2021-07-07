@@ -51,25 +51,21 @@ public class MapScript : MonoBehaviour
 
     private void Start()
     {
+        selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
+
         difficulty = Random.Range(1f, 3f);
         nestCount = Random.Range(4, 5) * difficulty;
         roundedNestCount = (Mathf.RoundToInt(nestCount));
-        branchTotal = Random.Range(5, 10);
-
-
-        selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
+        branchTotal = Random.Range(4, 10);
 
         for (int i = 0; i < roundedNestCount; i++) //For every nest, generate:
         {
-            selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
-
-            notRoundedDistance = (Random.Range(1.0f, 2.0f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 3.0f)) * difficulty); //a distance to the next nest
-
-            LocalNest = Nest;
 
             if (monsterOdds.Count != 0)
             {
                 selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
+                monsterOdds.Remove(selectedMonsterOdd);
+                usedMonsterOdds.Add(selectedMonsterOdd);
             }
 
             else
@@ -77,6 +73,10 @@ public class MapScript : MonoBehaviour
                 selectedMonsterOdd = usedMonsterOdds[Random.Range(0, usedMonsterOdds.Count)]; //If the used monsters list is empty, re-use previous ones
             }
 
+            notRoundedDistance = (Random.Range(1.0f, 2.0f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 3.0f)) * difficulty); //a distance to the next nest
+            LocalNest = Nest;
+
+            LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
             LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
             LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
 
@@ -93,8 +93,6 @@ public class MapScript : MonoBehaviour
                 nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50,50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 counter += 1;
             }
-            monsterOdds.Remove(selectedMonsterOdd);
-            usedMonsterOdds.Add(selectedMonsterOdd);
         }
         //foreach (var x in nestList)
         //{
@@ -110,6 +108,8 @@ public class MapScript : MonoBehaviour
                 if (monsterOdds.Count != 0)
                 {
                     selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
+                    monsterOdds.Remove(selectedMonsterOdd);
+                    usedMonsterOdds.Add(selectedMonsterOdd);
                 }
 
                 else
@@ -131,8 +131,6 @@ public class MapScript : MonoBehaviour
                 Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
                 counter += 1;
                 branchCounter += 1;
-                monsterOdds.Remove(selectedMonsterOdd);
-                usedMonsterOdds.Add(selectedMonsterOdd);
             }
             hasBranch.Add(randomNest);
             branchCounter = 0;
