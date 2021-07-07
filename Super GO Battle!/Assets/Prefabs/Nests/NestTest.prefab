@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: Leaf Bug
-  maxDistance: 6
+  Monster: spider
+  maxDistance: 3
   currentDistance: 0
-  oldPos: {x: -5, y: 102.45627, z: 0}
+  oldPos: {x: 12, y: 75.49202, z: 0}
 --- !u!120 &1834321305790379903
 LineRenderer:
   m_ObjectHideFlags: 0

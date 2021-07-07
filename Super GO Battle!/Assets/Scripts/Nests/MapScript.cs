@@ -28,17 +28,18 @@ public class MapScript : MonoBehaviour
 
     private float nestCount; //The number of nests for a map - is a float as the number is randomly generated then rounded up
     public List<string> monsterList = new List<string>();
+    private List<int> usedMonsterOdds = new List<int>();
     private float difficulty; //Each map has a difficulty that will be displayed on the front of each map.
     private int roundedNestCount; //The rounded up nest value, and the final number of nests to be created in a map.
 
     private float notRoundedDistance; //The number of KM between each map - to be stored in a nest. Also randomly generated and needs to be rounded up
     public List<int> distances = new List<int>(); //Said rounded up KM number.
     private Vector3 oldDistance;
-    bool spawnedOne = false;
 
     private int counter;
     private List<GameObject> nestList = new List<GameObject>();
-    private int randomNest;
+    private List<GameObject> hasBranch = new List<GameObject>();
+    private GameObject randomNest;
 
     private int branchCounter;
     private int branchTotal;
@@ -53,7 +54,7 @@ public class MapScript : MonoBehaviour
         difficulty = Random.Range(1f, 3f);
         nestCount = Random.Range(4, 5) * difficulty;
         roundedNestCount = (Mathf.RoundToInt(nestCount));
-        branchTotal = Random.Range(2, 5);
+        branchTotal = Random.Range(5, 10);
 
 
         selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
@@ -66,15 +67,23 @@ public class MapScript : MonoBehaviour
 
             LocalNest = Nest;
 
-            LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
+            if (monsterOdds.Count != 0)
+            {
+                selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
+            }
+
+            else
+            {
+                selectedMonsterOdd = usedMonsterOdds[Random.Range(0, usedMonsterOdds.Count)]; //If the used monsters list is empty, re-use previous ones
+            }
+
             LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
             LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
 
-            if (spawnedOne == false)
+            if (counter == 0)
             {
                 LocalNest.name = "Nest " + counter.ToString();
                 Instantiate(LocalNest, oldDistance = new Vector3 (0, -105, 0), Quaternion.identity, this.gameObject.transform);
-                spawnedOne = true;
                 counter += 1;
             }
 
@@ -85,41 +94,64 @@ public class MapScript : MonoBehaviour
                 counter += 1;
             }
             monsterOdds.Remove(selectedMonsterOdd);
+            usedMonsterOdds.Add(selectedMonsterOdd);
         }
-
         //foreach (var x in nestList)
         //{
         //    Debug.Log(x.ToString());
         //}
 
-        randomNest = Random.Range(0, nestList.Count);
-        oldDistance = nestList[randomNest].transform.position;
-
-        for (int i = 0; i < (nestList.Count - randomNest); i++)
+        for (int k = 0; k < branchTotal; k++)
         {
-            selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
+            Wario();
+            oldDistance = randomNest.transform.position;
+            for (int i = 0; i < (nestList.Count - (nestList.IndexOf(randomNest))); i++)
+            {
+                if (monsterOdds.Count != 0)
+                {
+                    selectedMonsterOdd = monsterOdds[Random.Range(0, monsterOdds.Count)]; //its own monster, taken from the array of monsters for the selected environment
+                }
 
-            notRoundedDistance = (Random.Range(1.0f, 2.0f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 3.0f)) * difficulty); //a distance to the next nest
+                else
+                {
+                    selectedMonsterOdd = usedMonsterOdds[Random.Range(0, usedMonsterOdds.Count)]; //If the used monsters list is empty, re-use previous ones
+                }
 
-            LocalNest = Nest;
+                notRoundedDistance = (Random.Range(1.0f, 2.0f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 3.0f)) * difficulty); //a distance to the next nest
 
-            LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
-            LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
-            LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
-            LocalNest.name = nestList[randomNest].name + "branch" + branchCounter;
+                LocalNest = Nest;
 
-            Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, nestList[randomNest].transform);
-            counter += 1;
-            branchCounter += 1;
-            monsterOdds.Remove(selectedMonsterOdd);
+                
+                LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
+                LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
+                LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
+                LocalNest.name = randomNest.name + " branch " + branchCounter;
+                LocalNest.name = LocalNest.name.Replace("(Clone)", "").Trim();
+
+                Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
+                counter += 1;
+                branchCounter += 1;
+                monsterOdds.Remove(selectedMonsterOdd);
+                usedMonsterOdds.Add(selectedMonsterOdd);
+            }
+            hasBranch.Add(randomNest);
+            branchCounter = 0;
         }
-        nestList.Remove(nestList[randomNest]);
-        branchCounter = 0;
+
     }
 
     void Wario()
     {
-        
+        if (hasBranch.Count + 1 == roundedNestCount)
+        {
+            hasBranch.Clear();
+        }
+
+        randomNest = nestList[Random.Range(0, nestList.Count)];
+        if (hasBranch.Contains(randomNest))
+        {
+            Wario();
+        }
     }
 }
 
