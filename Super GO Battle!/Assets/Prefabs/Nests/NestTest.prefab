@@ -9,14 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6392759877784771908}
+  - component: {fileID: 3682186679574755109}
   - component: {fileID: 6392759877784769209}
   - component: {fileID: 6392759877784769210}
   - component: {fileID: 6392759877784769211}
   - component: {fileID: 1834321305790379903}
   - component: {fileID: 3770108687825143981}
-  - component: {fileID: 4335079587442317468}
-  - component: {fileID: 5446611402745887165}
-  - component: {fileID: 6356652345530043117}
+  - component: {fileID: 2434564773916840814}
   m_Layer: 5
   m_Name: NestTest
   m_TagString: Untagged
@@ -43,6 +42,22 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 30.48561}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3682186679574755109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6392759877784771909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monster: fly
+  maxDistance: 1
+  currentDistance: 0
+  oldPos: {x: 495, y: 43.72124, z: 0}
 --- !u!222 &6392759877784769209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -243,51 +258,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &4335079587442317468
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6392759877784771909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 40, y: 40}
-  m_EdgeRadius: 0
---- !u!114 &5446611402745887165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6392759877784771909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Monster: dragonfly
-  maxDistance: 2
-  currentDistance: 0
-  oldPos: {x: -29, y: 49.080738, z: 0}
---- !u!66 &6356652345530043117
-CompositeCollider2D:
+  m_Constraints: 7
+--- !u!58 &2434564773916840814
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -300,25 +273,5 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 4335079587442317468}
-    m_ColliderPaths:
-    - - X: 199999707
-        Y: -200000000
-      - X: 199999707
-        Y: 200000000
-      - X: -200000000
-        Y: 199999707
-      - X: -199999707
-        Y: -200000000
-  m_CompositePaths:
-    m_Paths:
-    - - {x: 19.99994, y: -20}
-      - {x: 19.99994, y: 20}
-      - {x: -20, y: 19.99994}
-      - {x: -19.99994, y: -20}
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  serializedVersion: 2
+  m_Radius: 20

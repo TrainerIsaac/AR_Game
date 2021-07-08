@@ -90,18 +90,14 @@ public class MapScript : MonoBehaviour
                 LocalNest.name = "Nest " + counter.ToString();
                 Instantiate(LocalNest, oldDistance = new Vector3(0, -105, 0), Quaternion.identity, this.gameObject.transform);
                 placedNests.Add(oldDistance);
-                GetUnnocupiedSpace();
-                //AA
                 counter += 1;
             }
 
             else
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
+                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25, 25), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 placedNests.Add(oldDistance);
-                GetUnnocupiedSpace();
-                //AA
                 counter += 1;
             }
         }
@@ -139,10 +135,9 @@ public class MapScript : MonoBehaviour
                 LocalNest.name = randomNest.name + " branch " + branchCounter;
                 LocalNest.name = LocalNest.name.Replace("(Clone)", "").Trim();
 
-                Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
-                placedNests.Add(oldDistance);
+                //Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
+                //placedNests.Add(oldDistance);
                 GetUnnocupiedSpace();
-                //AA
 
                 counter += 1;
                 branchCounter += 1;
@@ -170,12 +165,19 @@ public class MapScript : MonoBehaviour
     void GetUnnocupiedSpace()
     {
         //gameObject.GetComponent<CompositeCollider2D>().bounds;
-        test = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
-        var checkResult = Physics.OverlapSphere(test, 5);
-        if (checkResult.Length == 0)
+
+        test = new Vector3(Random.Range(-500, 500), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6), 0);
+        bool checkResult = Physics2D.OverlapCircle(test, 20);
+        if (checkResult == false)
         {
-            // all clear!
-            nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
+            print("Functioning! B");
+            Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
+            placedNests.Add(oldDistance);
+        }
+        else
+        {
+            print("Failed...");
+            GetUnnocupiedSpace();
         }
     }
 }
