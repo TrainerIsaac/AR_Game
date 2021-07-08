@@ -48,6 +48,7 @@ public class MapScript : MonoBehaviour
     private List<Vector3> placedNests = new List<Vector3>();
 
     private int testicle;
+    private Vector3 test;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -168,33 +169,15 @@ public class MapScript : MonoBehaviour
 
     void GetUnnocupiedSpace()
     {
-
-        for (int testicle = 0; testicle < placedNests.Count; testicle++)
+        //gameObject.GetComponent<CompositeCollider2D>().bounds;
+        test = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
+        var checkResult = Physics.OverlapSphere(test, 5);
+        if (checkResult.Length == 0)
         {
-            if (LocalNest.GetComponent<CircleCollider2D>().OverlapPoint(new Vector2(placedNests[testicle].x, placedNests[testicle].y)))
-            {
-                Debug.Log("Re-Locating");
-                Test();
-            }
-            else
-            {
-            }
+            // all clear!
+            nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
         }
     }
-    
-    void Test()
-    {
-        LocalNest.transform.position = new Vector3(Random.Range(100,100), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 100, 0);
-        if (LocalNest.GetComponent<CircleCollider2D>().OverlapPoint(new Vector2(placedNests[testicle].x, placedNests[testicle].y)))
-        {
-            Debug.Log("Re-Re-Locating");
-            Test();
-        }
-        else
-        {
-        }
-    }
-
 }
 
 //Impliment multiple branches occuring rather than just one every time.
