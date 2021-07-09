@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 6392759877784769211}
   - component: {fileID: 1834321305790379903}
   - component: {fileID: 3770108687825143981}
-  - component: {fileID: 2434564773916840814}
+  - component: {fileID: 2384873500453969653}
+  - component: {fileID: 669939917814640069}
   m_Layer: 5
   m_Name: NestTest
   m_TagString: Untagged
@@ -39,7 +40,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 30.48561}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3682186679574755109
@@ -54,10 +55,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: Lava Blob
-  maxDistance: 1
+  Monster: Demon
+  maxDistance: 6
   currentDistance: 0
-  oldPos: {x: 31.528603, y: -2.8587556, z: 0}
+  oldPos: {x: -22.577982, y: -100.78003, z: 0}
 --- !u!222 &6392759877784769209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -249,8 +250,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 400
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -259,8 +260,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!58 &2434564773916840814
-CircleCollider2D:
+--- !u!68 &2384873500453969653
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6392759877784771909}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 3
+  m_Points:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!61 &669939917814640069
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -273,5 +296,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 9
+  m_Size: {x: 20, y: 20}
+  m_EdgeRadius: 0

@@ -91,7 +91,7 @@ public class MapScript : MonoBehaviour
             if (counter == 0)
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                Instantiate(LocalNest, oldDistance = new Vector3(0, -105, 0), Quaternion.identity, this.gameObject.transform);
+                Instantiate(LocalNest, oldDistance = new Vector3(0, -210, 0), Quaternion.identity, this.gameObject.transform);
                 placedNests.Add(oldDistance);
                 counter += 1;
             }
@@ -174,7 +174,7 @@ public class MapScript : MonoBehaviour
 
         if(testx == 0)
         {
-            test = new Vector3(Random.Range(-50f, 50f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0f,20f), 0);
+            test = new Vector3(Random.Range((-25f - lowNestRange), (25f + highNestRange)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0f,20f), 0);
         }
         else
         {
