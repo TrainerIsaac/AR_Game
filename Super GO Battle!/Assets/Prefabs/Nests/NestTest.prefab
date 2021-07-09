@@ -54,10 +54,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: fly
+  Monster: Lava Blob
   maxDistance: 1
   currentDistance: 0
-  oldPos: {x: 495, y: 43.72124, z: 0}
+  oldPos: {x: 31.528603, y: -2.8587556, z: 0}
 --- !u!222 &6392759877784769209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -274,4 +274,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 9

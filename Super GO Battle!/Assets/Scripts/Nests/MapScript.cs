@@ -44,11 +44,14 @@ public class MapScript : MonoBehaviour
     private int branchCounter;
     private int branchTotal;
 
-    private Collider2D localCollider;
     private List<Vector3> placedNests = new List<Vector3>();
 
-    private int testicle;
     private Vector3 test;
+    private float testx;
+    private float oldx;
+
+    private float lowNestRange = 0.5f;
+    private float highNestRange = 1.5f;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -59,9 +62,9 @@ public class MapScript : MonoBehaviour
         selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
 
         difficulty = Random.Range(1f, 3f);
-        nestCount = Random.Range(4, 5) * difficulty;
+        nestCount = Random.Range(4f, 6f) * difficulty;
         roundedNestCount = (Mathf.RoundToInt(nestCount));
-        branchTotal = Random.Range(4, 10);
+        branchTotal = Random.Range(2, 5);
 
         for (int i = 0; i < roundedNestCount; i++) //For every nest, generate:
         {
@@ -96,7 +99,7 @@ public class MapScript : MonoBehaviour
             else
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25, 25), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
+                nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25f, 25f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 placedNests.Add(oldDistance);
                 counter += 1;
             }
@@ -144,6 +147,10 @@ public class MapScript : MonoBehaviour
             }
             hasBranch.Add(randomNest);
             branchCounter = 0;
+            testx = 0;
+            oldx = 0;
+            highNestRange = 1.5f;
+            lowNestRange = 0.5f;
         }
 
     }
@@ -164,20 +171,39 @@ public class MapScript : MonoBehaviour
 
     void GetUnnocupiedSpace()
     {
-        //gameObject.GetComponent<CompositeCollider2D>().bounds;
 
-        test = new Vector3(Random.Range(-500, 500), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6), 0);
-        bool checkResult = Physics2D.OverlapCircle(test, 20);
+        if(testx == 0)
+        {
+            test = new Vector3(Random.Range(-50f, 50f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0f,20f), 0);
+        }
+        else
+        {
+            test = new Vector3(testx, oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0, 20), 0);
+        }
+
+
+        bool checkResult = Physics2D.OverlapCircle(test, 9);
         if (checkResult == false)
         {
-            print("Functioning! B");
+            print("Functioning!");
             Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
             placedNests.Add(oldDistance);
+            if(testx < 20)
+            {
+                testx = (test.x * (Random.Range(0.8f, 1.8f)));
+                oldx = testx;
+            }
+            else
+            {
+                testx = (oldx * Random.Range(lowNestRange, highNestRange));
+            }
         }
         else
         {
             print("Failed...");
             GetUnnocupiedSpace();
+            lowNestRange -= 0.2f;
+            highNestRange += 0.2f;
         }
     }
 }
