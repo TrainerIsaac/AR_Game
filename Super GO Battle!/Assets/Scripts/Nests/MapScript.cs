@@ -42,16 +42,14 @@ public class MapScript : MonoBehaviour
     private GameObject randomNest;
 
     private int branchCounter;
-    private int branchTotal;
+    private float branchTotal;
 
     private List<Vector3> placedNests = new List<Vector3>();
 
     private Vector3 test;
-    private float testx;
-    private float oldx;
-
-    private float lowNestRange = 0.5f;
-    private float highNestRange = 1.5f;
+    private float rangeMultiplyer = 1;
+    private int randomSide;
+    private bool randomSideDone = false;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -61,10 +59,10 @@ public class MapScript : MonoBehaviour
     {
         selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
 
-        difficulty = Random.Range(1f, 3f);
-        nestCount = Random.Range(4f, 6f) * difficulty;
+        difficulty = Random.Range(1f, 2f);
+        nestCount = Random.Range(5f, 6.5f) * difficulty;
         roundedNestCount = (Mathf.RoundToInt(nestCount));
-        branchTotal = Random.Range(2, 5);
+        branchTotal = Random.Range(4f, 5f) * difficulty;
 
         for (int i = 0; i < roundedNestCount; i++) //For every nest, generate:
         {
@@ -81,7 +79,7 @@ public class MapScript : MonoBehaviour
                 selectedMonsterOdd = usedMonsterOdds[Random.Range(0, usedMonsterOdds.Count)]; //If the used monsters list is empty, re-use previous ones
             }
 
-            notRoundedDistance = (Random.Range(1.0f, 2.0f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 3.0f)) * difficulty); //a distance to the next nest
+            notRoundedDistance = ((Random.Range(1.0f, 1.2f) * (selectedMonsterOdd + 1) / (Random.Range(2.0f, 2.2f)) * difficulty) * 2); //a distance to the next nest
             LocalNest = Nest;
 
             LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][0][selectedMonsterOdd];
@@ -109,7 +107,7 @@ public class MapScript : MonoBehaviour
         //    Debug.Log(x.ToString());
         //}
 
-        for (int k = 0; k < branchTotal; k++)
+        for (int k = 0; k < Mathf.RoundToInt(branchTotal); k++)
         {
             GetUnusedNest();
             oldDistance = randomNest.transform.position;
@@ -137,20 +135,14 @@ public class MapScript : MonoBehaviour
                 LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
                 LocalNest.name = randomNest.name + " branch " + branchCounter;
                 LocalNest.name = LocalNest.name.Replace("(Clone)", "").Trim();
-
-                //Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-50, 50), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, randomNest.transform);
-                //placedNests.Add(oldDistance);
                 GetUnnocupiedSpace();
 
                 counter += 1;
                 branchCounter += 1;
             }
+            randomSideDone = false;
             hasBranch.Add(randomNest);
             branchCounter = 0;
-            testx = 0;
-            oldx = 0;
-            highNestRange = 1.5f;
-            lowNestRange = 0.5f;
         }
 
     }
@@ -171,44 +163,31 @@ public class MapScript : MonoBehaviour
 
     void GetUnnocupiedSpace()
     {
-
-        if(testx == 0)
+        if(randomSideDone == false)
         {
-            test = new Vector3(Random.Range((-25f - lowNestRange), (25f + highNestRange)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0f,20f), 0);
+            randomSide = Random.Range(0, 2);
+            randomSideDone = true;
         }
-        else
-        {
-            test = new Vector3(testx, oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + Random.Range(0, 20), 0);
-        }
+        test = new Vector3(randomSide == 0 ? (Random.Range(-40f * rangeMultiplyer, -15f * rangeMultiplyer)) : (Random.Range(15f * rangeMultiplyer, 40 * rangeMultiplyer)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
 
+        bool checkResult = Physics2D.OverlapCircle(test, 9f);
 
-        bool checkResult = Physics2D.OverlapCircle(test, 9);
         if (checkResult == false)
         {
             print("Functioning!");
             Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
             placedNests.Add(oldDistance);
-            if(testx < 20)
-            {
-                testx = (test.x * (Random.Range(0.8f, 1.8f)));
-                oldx = testx;
-            }
-            else
-            {
-                testx = (oldx * Random.Range(lowNestRange, highNestRange));
-            }
+            rangeMultiplyer = 1;
         }
         else
         {
-            print("Failed...");
+            rangeMultiplyer *= 1.25f;
+            print(rangeMultiplyer);
             GetUnnocupiedSpace();
-            lowNestRange -= 0.2f;
-            highNestRange += 0.2f;
         }
     }
 }
 
-//Impliment multiple branches occuring rather than just one every time.
 //load item in environments folder of same name
 //POSSIBLY Try and weight tougher monsters towards the end of the map?
 //Give player the ability to traverse through a map.
