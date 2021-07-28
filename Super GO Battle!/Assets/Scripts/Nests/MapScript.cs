@@ -49,7 +49,7 @@ public class MapScript : MonoBehaviour
     private Vector3 test;
     private float rangeMultiplyer = 1;
     private int randomSide;
-    private bool randomSideDone = false;
+    private GameObject oldNest;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -89,16 +89,22 @@ public class MapScript : MonoBehaviour
             if (counter == 0)
             {
                 LocalNest.name = "Nest " + counter.ToString();
-                Instantiate(LocalNest, oldDistance = new Vector3(0, -210, 0), Quaternion.identity, this.gameObject.transform);
+                LocalNest.GetComponent<NestScript>().order = counter;
+                oldNest = Instantiate(LocalNest, oldDistance = new Vector3(0, -210, 0), Quaternion.identity, this.gameObject.transform);
                 placedNests.Add(oldDistance);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<NestNavigator>().currentNest = oldNest;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<NestNavigator>().enabled = true;
                 counter += 1;
             }
 
             else
             {
                 LocalNest.name = "Nest " + counter.ToString();
+                LocalNest.GetComponent<NestScript>().order = counter;
                 nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25f, 25f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 placedNests.Add(oldDistance);
+                oldNest.GetComponent<NestScript>().nextNest = nestList[counter - 1];
+                oldNest = nestList[counter - 1];
                 counter += 1;
             }
         }
@@ -109,6 +115,7 @@ public class MapScript : MonoBehaviour
 
         for (int k = 0; k < Mathf.RoundToInt(branchTotal); k++)
         {
+            randomSide = Random.Range(0, 2);
             GetUnusedNest();
             oldDistance = randomNest.transform.position;
             for (int i = 0; i < (nestList.Count - (nestList.IndexOf(randomNest))); i++)
@@ -135,16 +142,15 @@ public class MapScript : MonoBehaviour
                 LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
                 LocalNest.name = randomNest.name + " branch " + branchCounter;
                 LocalNest.name = LocalNest.name.Replace("(Clone)", "").Trim();
+                LocalNest.GetComponent<NestScript>().order = nestList.IndexOf(randomNest) + branchCounter + 2;
                 GetUnnocupiedSpace();
 
                 counter += 1;
                 branchCounter += 1;
             }
-            randomSideDone = false;
             hasBranch.Add(randomNest);
             branchCounter = 0;
         }
-
     }
 
     void GetUnusedNest()
@@ -163,12 +169,16 @@ public class MapScript : MonoBehaviour
 
     void GetUnnocupiedSpace()
     {
-        if(randomSideDone == false)
+        print(randomSide);
+        if(randomSide == 0)
         {
-            randomSide = Random.Range(0, 2);
-            randomSideDone = true;
+            test = new Vector3((Random.Range(-40f * rangeMultiplyer, -15f * rangeMultiplyer)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
         }
-        test = new Vector3(randomSide == 0 ? (Random.Range(-40f * rangeMultiplyer, -15f * rangeMultiplyer)) : (Random.Range(15f * rangeMultiplyer, 40 * rangeMultiplyer)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
+
+        if (randomSide == 1)
+        {
+            test = new Vector3((Random.Range(15f * rangeMultiplyer, 40f * rangeMultiplyer)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
+        }
 
         bool checkResult = Physics2D.OverlapCircle(test, 9f);
 
@@ -182,10 +192,11 @@ public class MapScript : MonoBehaviour
         else
         {
             rangeMultiplyer *= 1.25f;
-            print(rangeMultiplyer);
+            //print(rangeMultiplyer);
             GetUnnocupiedSpace();
         }
     }
+    
 }
 
 //load item in environments folder of same name

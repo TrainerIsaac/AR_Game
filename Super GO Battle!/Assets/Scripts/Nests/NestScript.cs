@@ -13,6 +13,8 @@ public class NestScript : MonoBehaviour
     public int currentDistance;
     public Vector3 oldPos;
     private List<Vector2> test = new List<Vector2>();
+    public int order;
+    public GameObject nextNest;
 
     void Start()
     {
@@ -38,21 +40,4 @@ public class NestScript : MonoBehaviour
             //find object with activate scene script (which will be a button on the canvas), pass through the monster + stage info and set it to active/interactable
         }
     }
-
-
-    //void OnCollisionEnter2D(Collision2D c)
-    //{
-    //    print("AA");
-    //    // force is how forcefully we will push the player away from the enemy.
-    //    float force = 3;
-
-    //    // Calculate Angle Between the collision point and the player
-    //    Vector2 dir = c.contacts[0].point - new Vector2(transform.position.x, transform.position.y);
-    //    // We then get the opposite (-Vector3) and normalize it
-    //    dir = -dir.normalized;
-    //    // And finally we add force in the direction of dir and multiply it by force. 
-    //    // This will push back the player
-    //    GetComponent<Rigidbody2D>().AddForce(dir * force);
-
-    //}
 }

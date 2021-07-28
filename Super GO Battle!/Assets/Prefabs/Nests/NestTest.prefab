@@ -55,10 +55,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: Lava Blob
-  maxDistance: 2
+  Monster: Fire Bat
+  maxDistance: 4
   currentDistance: 0
-  oldPos: {x: -105.95941, y: -42.83935, z: 0}
+  oldPos: {x: 2.656248, y: -22.978094, z: 0}
+  order: 8
+  nextNest: {fileID: 0}
 --- !u!222 &6392759877784769209
 CanvasRenderer:
   m_ObjectHideFlags: 0
