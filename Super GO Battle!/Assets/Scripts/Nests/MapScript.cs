@@ -39,6 +39,7 @@ public class MapScript : MonoBehaviour
     private int counter;
     private List<GameObject> nestList = new List<GameObject>();
     private List<GameObject> hasBranch = new List<GameObject>();
+    private List<GameObject> isBranch = new List<GameObject>();
     private GameObject randomNest;
 
     private int branchCounter;
@@ -148,6 +149,7 @@ public class MapScript : MonoBehaviour
                 counter += 1;
                 branchCounter += 1;
             }
+            isBranch.Clear();
             hasBranch.Add(randomNest);
             branchCounter = 0;
         }
@@ -184,10 +186,23 @@ public class MapScript : MonoBehaviour
 
         if (checkResult == false)
         {
-            print("Functioning!");
-            Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
-            placedNests.Add(oldDistance);
-            rangeMultiplyer = 1;
+            if(branchCounter == 0)
+            {
+                print("Functioning!");
+                oldNest = Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
+                placedNests.Add(oldDistance);
+                rangeMultiplyer = 1;
+            }
+
+            else
+            {
+                print("Functioning!");
+                isBranch.Add(Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform));
+                placedNests.Add(oldDistance);
+                rangeMultiplyer = 1;
+                oldNest.GetComponent<NestScript>().nextNest = isBranch[branchCounter - 1];
+                oldNest = isBranch[branchCounter - 1];
+            }
         }
         else
         {
