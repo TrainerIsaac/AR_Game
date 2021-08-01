@@ -55,12 +55,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: spider
+  Monster: Burning Bug
   maxDistance: 3
   currentDistance: 0
-  oldPos: {x: 183.26897, y: 54.389404, z: 0}
-  order: 11
-  nextNest: {fileID: 0}
+  oldPos: {x: -134.6957, y: -84.106865, z: 0}
+  order: 6
+  nextNest:
+  - {fileID: 0}
 --- !u!222 &6392759877784769209
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ public class MapScript : MonoBehaviour
     private float rangeMultiplyer = 1;
     private int randomSide;
     private GameObject oldNest;
+    private GameObject tempOldNest;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -104,7 +105,7 @@ public class MapScript : MonoBehaviour
                 LocalNest.GetComponent<NestScript>().order = counter;
                 nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25f, 25f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 placedNests.Add(oldDistance);
-                oldNest.GetComponent<NestScript>().nextNest = nestList[counter - 1];
+                oldNest.GetComponent<NestScript>().nextNest.Add(nestList[counter - 1]);
                 oldNest = nestList[counter - 1];
                 counter += 1;
             }
@@ -119,6 +120,7 @@ public class MapScript : MonoBehaviour
             randomSide = Random.Range(0, 2);
             GetUnusedNest();
             oldDistance = randomNest.transform.position;
+            oldNest = randomNest;
             for (int i = 0; i < (nestList.Count - (nestList.IndexOf(randomNest))); i++)
             {
                 if (monsterOdds.Count != 0)
@@ -189,9 +191,11 @@ public class MapScript : MonoBehaviour
             if(branchCounter == 0)
             {
                 print("Functioning!");
-                oldNest = Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
+                tempOldNest = Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
                 placedNests.Add(oldDistance);
                 rangeMultiplyer = 1;
+                oldNest.GetComponent<NestScript>().nextNest.Add(tempOldNest);
+                oldNest = tempOldNest;
             }
 
             else
@@ -200,7 +204,7 @@ public class MapScript : MonoBehaviour
                 isBranch.Add(Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform));
                 placedNests.Add(oldDistance);
                 rangeMultiplyer = 1;
-                oldNest.GetComponent<NestScript>().nextNest = isBranch[branchCounter - 1];
+                oldNest.GetComponent<NestScript>().nextNest.Add(isBranch[branchCounter - 1]);
                 oldNest = isBranch[branchCounter - 1];
             }
         }

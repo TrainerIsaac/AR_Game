@@ -14,7 +14,7 @@ public class NestScript : MonoBehaviour
     public Vector3 oldPos;
     private List<Vector2> test = new List<Vector2>();
     public int order;
-    public GameObject nextNest;
+    public List<GameObject> nextNest = new List<GameObject>();
 
     void Start()
     {
