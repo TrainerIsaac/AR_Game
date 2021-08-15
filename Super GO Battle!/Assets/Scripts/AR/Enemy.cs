@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
     private bool closeCooldown = false;
     private float distance;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("MainCamera").transform;
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "ProjectileB")

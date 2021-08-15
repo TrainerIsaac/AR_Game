@@ -62,25 +62,28 @@
     <Compile Include="Assets\Scripts\AR\Attack Attributes\ProjectileScript.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Ground Spikes.cs" />
     <Compile Include="Assets\Scripts\AR\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Nests\DataHolder.cs" />
     <Compile Include="Assets\Scripts\AR\Attacks\BulletBarrage.cs" />
-    <Compile Include="Assets\MoveScenes.cs" />
+    <Compile Include="Assets\CombatScripts\MoveScenes.cs" />
     <Compile Include="Assets\Testing.cs" />
     <Compile Include="Assets\Scripts\AR\PlayerScript.cs" />
-    <Compile Include="Assets\Rock.cs" />
+    <Compile Include="Assets\CombatScripts\Rock.cs" />
     <Compile Include="Assets\Scripts\AR\LightEstimation.cs" />
     <Compile Include="Assets\Scripts\Nests\NestScript.cs" />
-    <Compile Include="Assets\CloseAttack.cs" />
+    <Compile Include="Assets\CombatScripts\CloseAttack.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Hurricane.cs" />
-    <Compile Include="Assets\Cooldown.cs" />
+    <Compile Include="Assets\CombatScripts\Cooldown.cs" />
+    <Compile Include="Assets\Scripts\Nests\NestNavigator.cs" />
     <Compile Include="Assets\Scripts\Nests\MapScript.cs" />
+    <Compile Include="Assets\Scripts\AR\DataReader.cs" />
     <Compile Include="Assets\SliderValueToText.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Rapid Fire.cs" />
-    <Compile Include="Assets\RapidFire.cs" />
-    <Compile Include="Assets\Scripts\Nests\NestNavigator.cs" />
+    <Compile Include="Assets\CombatScripts\RapidFire.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Models\Placeholders\Solrock\Tag.txt" />
      <None Include="Assets\Shaders\PlaneOcclusion\PlaneOcclusion.shader" />
+     <None Include="Assets\Models\Placeholders\Lunatone\Tag.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

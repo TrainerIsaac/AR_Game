@@ -8,6 +8,7 @@ TagManager:
   - ProjectileB
   - Opponent
   - GroundSpike
+  - DataHolder
   layers:
   - Default
   - TransparentFX

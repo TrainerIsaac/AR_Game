@@ -10,11 +10,11 @@ public class NestScript : MonoBehaviour
     public string Monster;
 
     public int maxDistance;
-    public int currentDistance;
     public Vector3 oldPos;
-    private List<Vector2> test = new List<Vector2>();
+    private List<Vector2> linePoints = new List<Vector2>();
     public int order;
     public List<GameObject> nextNest = new List<GameObject>();
+    public bool hasFought = false;
 
     void Start()
     {
@@ -28,16 +28,7 @@ public class NestScript : MonoBehaviour
         gameObject.GetComponent<LineRenderer>().SetPosition(1, this.gameObject.transform.position);
         //uses distance generated from MapScript. 
         //Keeps track of current KM Walked. Can have max - current taken away from banked distance.
-        test = (new List<Vector2>() { (new Vector2 (oldPos.x - gameObject.transform.position.x, oldPos.y - gameObject.transform.position.y) ), new Vector2(gameObject.transform.position.x - gameObject.transform.position.x, gameObject.transform.position.y - gameObject.transform.position.y) });
-        gameObject.GetComponent<EdgeCollider2D>().SetPoints(test); 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(currentDistance == maxDistance)
-        {
-            //find object with activate scene script (which will be a button on the canvas), pass through the monster + stage info and set it to active/interactable
-        }
+        linePoints = (new List<Vector2>() { (new Vector2 (oldPos.x - gameObject.transform.position.x, oldPos.y - gameObject.transform.position.y) ), new Vector2(gameObject.transform.position.x - gameObject.transform.position.x, gameObject.transform.position.y - gameObject.transform.position.y) });
+        gameObject.GetComponent<EdgeCollider2D>().SetPoints(linePoints); 
     }
 }

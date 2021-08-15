@@ -120,67 +120,95 @@ extern void U3CCooldownU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_O
 extern void U3CCooldownU3Ed__7_System_Collections_IEnumerator_Reset_m9BB62D463144669A414D2A8520C6EDBC5C7B315B (void);
 // 0x00000036 System.Object BulletBarrage/<Cooldown>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CCooldownU3Ed__7_System_Collections_IEnumerator_get_Current_m89B4BF7D8F6CC52A48BB62E4EF0C96988653D4AE (void);
-// 0x00000037 System.Void Enemy::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000037 System.Void DataReader::Start()
+extern void DataReader_Start_m234782DE2EC9087D225A493AB2D8CB0370D60AB7 (void);
+// 0x00000038 System.Void DataReader::.ctor()
+extern void DataReader__ctor_mE49759CBFCB70B40B7C4A7677C7E8AB766A06B0B (void);
+// 0x00000039 System.Void Enemy::Start()
+extern void Enemy_Start_m9FA35B427F2B9FDFD390E9812C2556775C62CB02 (void);
+// 0x0000003A System.Void Enemy::OnTriggerEnter(UnityEngine.Collider)
 extern void Enemy_OnTriggerEnter_mC91FFDE471C63A39A97C086223C815D9085CA6D8 (void);
-// 0x00000038 System.Void Enemy::Update()
+// 0x0000003B System.Void Enemy::Update()
 extern void Enemy_Update_mA01EE7AF5D3B97687752E9D22BECB4A3E13F8FD2 (void);
-// 0x00000039 System.Void Enemy::.ctor()
+// 0x0000003C System.Void Enemy::.ctor()
 extern void Enemy__ctor_m3C82F8269DE4132408E15B523907244771640734 (void);
-// 0x0000003A System.Void LightEstimation::Awake()
+// 0x0000003D System.Void LightEstimation::Awake()
 extern void LightEstimation_Awake_m235FD397AF66B30969C55A03662A0AF3C939CEAA (void);
-// 0x0000003B System.Void LightEstimation::OnEnable()
+// 0x0000003E System.Void LightEstimation::OnEnable()
 extern void LightEstimation_OnEnable_mD46CAFE75E1103FE8AA34C6CE94C6DC88F0BC39E (void);
-// 0x0000003C System.Void LightEstimation::OnDisable()
+// 0x0000003F System.Void LightEstimation::OnDisable()
 extern void LightEstimation_OnDisable_mE6B9C5CD8516C5F09FCDA60AAC1E2FA6E58C9CEE (void);
-// 0x0000003D System.Void LightEstimation::FrameUpdated(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+// 0x00000040 System.Void LightEstimation::FrameUpdated(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
 extern void LightEstimation_FrameUpdated_m0A02A97CD63F7957B28ECD371F81DA4D35B421FA (void);
-// 0x0000003E System.Void LightEstimation::.ctor()
+// 0x00000041 System.Void LightEstimation::.ctor()
 extern void LightEstimation__ctor_m8383629073F32A42EA866DE00BBBD46F66296032 (void);
-// 0x0000003F System.Void PlayerScript::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000042 System.Void PlayerScript::OnTriggerEnter(UnityEngine.Collider)
 extern void PlayerScript_OnTriggerEnter_m11056E5D1D2E1D59F3A227C0E4B70B1656769FB7 (void);
-// 0x00000040 System.Void PlayerScript::Update()
+// 0x00000043 System.Void PlayerScript::Update()
 extern void PlayerScript_Update_m4B7EDA0BE2C7C0C1ED25E80E6D341E17421FD3D2 (void);
-// 0x00000041 System.Collections.IEnumerator PlayerScript::BulletCool()
+// 0x00000044 System.Collections.IEnumerator PlayerScript::BulletCool()
 extern void PlayerScript_BulletCool_m41E59D262C8A98E4EED112D7F0BBC393A79052E0 (void);
-// 0x00000042 System.Void PlayerScript::.ctor()
+// 0x00000045 System.Void PlayerScript::.ctor()
 extern void PlayerScript__ctor_m8FC59B4E46D210A2C41D8B1F546C2603EC786E5D (void);
-// 0x00000043 System.Void PlayerScript/<BulletCool>d__9::.ctor(System.Int32)
+// 0x00000046 System.Void PlayerScript/<BulletCool>d__9::.ctor(System.Int32)
 extern void U3CBulletCoolU3Ed__9__ctor_m34BA04A5384F38BF4EA3336827239FFE77F75167 (void);
-// 0x00000044 System.Void PlayerScript/<BulletCool>d__9::System.IDisposable.Dispose()
+// 0x00000047 System.Void PlayerScript/<BulletCool>d__9::System.IDisposable.Dispose()
 extern void U3CBulletCoolU3Ed__9_System_IDisposable_Dispose_m1F68BC8400E41CE6011F2C88A862260380A9F81A (void);
-// 0x00000045 System.Boolean PlayerScript/<BulletCool>d__9::MoveNext()
+// 0x00000048 System.Boolean PlayerScript/<BulletCool>d__9::MoveNext()
 extern void U3CBulletCoolU3Ed__9_MoveNext_m9362EE83D2A0E1E7F583B520921CDD075802025C (void);
-// 0x00000046 System.Object PlayerScript/<BulletCool>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000049 System.Object PlayerScript/<BulletCool>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CBulletCoolU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3D2CAADD698607D2F5C8EF1DD431B580E690C8F0 (void);
-// 0x00000047 System.Void PlayerScript/<BulletCool>d__9::System.Collections.IEnumerator.Reset()
+// 0x0000004A System.Void PlayerScript/<BulletCool>d__9::System.Collections.IEnumerator.Reset()
 extern void U3CBulletCoolU3Ed__9_System_Collections_IEnumerator_Reset_m1C62CE9D88F7F8CB8C763F55A6196E6F1D79682E (void);
-// 0x00000048 System.Object PlayerScript/<BulletCool>d__9::System.Collections.IEnumerator.get_Current()
+// 0x0000004B System.Object PlayerScript/<BulletCool>d__9::System.Collections.IEnumerator.get_Current()
 extern void U3CBulletCoolU3Ed__9_System_Collections_IEnumerator_get_Current_m32F7F0FB443FA0D3C5AB36F6D57D006D2F47DA43 (void);
-// 0x00000049 System.Void StateMachine::Start()
+// 0x0000004C System.Void StateMachine::Start()
 extern void StateMachine_Start_m871698AFB6B963C6C2FD699A3AE8F77E1DE942C6 (void);
-// 0x0000004A System.Void StateMachine::Update()
+// 0x0000004D System.Void StateMachine::Update()
 extern void StateMachine_Update_mA354B9A7C6F6B28AB5824F0647015C0669349683 (void);
-// 0x0000004B System.Void StateMachine::.ctor()
+// 0x0000004E System.Void StateMachine::.ctor()
 extern void StateMachine__ctor_m386AC4CE9F753E4EF79C5C6AEDD6A01F8E696F86 (void);
-// 0x0000004C System.Void SliderValueToText::Start()
+// 0x0000004F System.Void DataHolder::Start()
+extern void DataHolder_Start_m2F6A1410AEC0753A4150E7F8509D6740B2CBEC09 (void);
+// 0x00000050 System.Void DataHolder::.ctor()
+extern void DataHolder__ctor_m23EB731F00EAC4C566B6ED9FE00D6CFAE5F483AA (void);
+// 0x00000051 System.Void MapScript::Start()
+extern void MapScript_Start_m40E144A431BE07207DD024F50385C56C28C621BA (void);
+// 0x00000052 System.Void MapScript::GetUnusedNest()
+extern void MapScript_GetUnusedNest_mAF77824CDFBCE1B47F06D43908D1CEB000538E32 (void);
+// 0x00000053 System.Void MapScript::GetUnnocupiedSpace()
+extern void MapScript_GetUnnocupiedSpace_mF46B64C7425440D2910DE8705D352E4094E7765C (void);
+// 0x00000054 System.Void MapScript::.ctor()
+extern void MapScript__ctor_mD60CA67676EBEBFEF7CD9542E9493550478283BC (void);
+// 0x00000055 System.Void NestNavigator::Start()
+extern void NestNavigator_Start_m6F7F23F114403CAD2AB1E2BF156BF019F0D5566D (void);
+// 0x00000056 System.Void NestNavigator::Update()
+extern void NestNavigator_Update_mFC4C292B50F3795383E873EBE5FCF08ED0330122 (void);
+// 0x00000057 System.Void NestNavigator::.ctor()
+extern void NestNavigator__ctor_m7E9790D57E18876AF6DC8EBF6B4D8D4EAE3FDFD4 (void);
+// 0x00000058 System.Void NestScript::Start()
+extern void NestScript_Start_mCC7A562DE408C8A8D822216D2EFD3A91C8727651 (void);
+// 0x00000059 System.Void NestScript::.ctor()
+extern void NestScript__ctor_mEBF5ED98F30808356F1BC73F3E86BD5D4848E7D7 (void);
+// 0x0000005A System.Void SliderValueToText::Start()
 extern void SliderValueToText_Start_m82C55275BBFC11A9AD3888663509D2F736CB0025 (void);
-// 0x0000004D System.Void SliderValueToText::ShowSliderValue()
+// 0x0000005B System.Void SliderValueToText::ShowSliderValue()
 extern void SliderValueToText_ShowSliderValue_mD42B3420B75F215F92859A4D57A9B08E9C554AE3 (void);
-// 0x0000004E System.Void SliderValueToText::.ctor()
+// 0x0000005C System.Void SliderValueToText::.ctor()
 extern void SliderValueToText__ctor_m043433A8C0B9E80DBC4E6F9094FBB1AC68A80F13 (void);
-// 0x0000004F System.Void Testing::OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+// 0x0000005D System.Void Testing::OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
 extern void Testing_OnStateEnter_m27344633BE16BAFD64B4485E3DEAB927B9C84D33 (void);
-// 0x00000050 System.Void Testing::OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+// 0x0000005E System.Void Testing::OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
 extern void Testing_OnStateUpdate_m68DD17E38198E6C97540F846E7AF863E68135747 (void);
-// 0x00000051 System.Void Testing::.ctor()
+// 0x0000005F System.Void Testing::.ctor()
 extern void Testing__ctor_mB2A300BC87D60FF1509230FC27CB1C2715E48FA4 (void);
-// 0x00000052 System.Void TutorialTesting::OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+// 0x00000060 System.Void TutorialTesting::OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
 extern void TutorialTesting_OnStateEnter_m0F9CF52BA8BB33F711E287CA30877D4800656242 (void);
-// 0x00000053 System.Void TutorialTesting::OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+// 0x00000061 System.Void TutorialTesting::OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
 extern void TutorialTesting_OnStateUpdate_m3B77D515E0EFD01AF7C07FDB5DEEB18ADCED193B (void);
-// 0x00000054 System.Void TutorialTesting::.ctor()
+// 0x00000062 System.Void TutorialTesting::.ctor()
 extern void TutorialTesting__ctor_mB38306AFEF0B5F7C74021F9E5E207D277EEDDC41 (void);
-static Il2CppMethodPointer s_methodPointers[84] = 
+static Il2CppMethodPointer s_methodPointers[98] = 
 {
 	CloseAttack_OnStateEnter_mD9C1D7B6FAA5D963114041E18F989993FDDA4775,
 	CloseAttack__ctor_m0AE427D253FBE78AEF74B26D217A1038155CDC90,
@@ -236,6 +264,9 @@ static Il2CppMethodPointer s_methodPointers[84] =
 	U3CCooldownU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0613922465498DE028FE36C8C221FC05020E1C66,
 	U3CCooldownU3Ed__7_System_Collections_IEnumerator_Reset_m9BB62D463144669A414D2A8520C6EDBC5C7B315B,
 	U3CCooldownU3Ed__7_System_Collections_IEnumerator_get_Current_m89B4BF7D8F6CC52A48BB62E4EF0C96988653D4AE,
+	DataReader_Start_m234782DE2EC9087D225A493AB2D8CB0370D60AB7,
+	DataReader__ctor_mE49759CBFCB70B40B7C4A7677C7E8AB766A06B0B,
+	Enemy_Start_m9FA35B427F2B9FDFD390E9812C2556775C62CB02,
 	Enemy_OnTriggerEnter_mC91FFDE471C63A39A97C086223C815D9085CA6D8,
 	Enemy_Update_mA01EE7AF5D3B97687752E9D22BECB4A3E13F8FD2,
 	Enemy__ctor_m3C82F8269DE4132408E15B523907244771640734,
@@ -257,6 +288,17 @@ static Il2CppMethodPointer s_methodPointers[84] =
 	StateMachine_Start_m871698AFB6B963C6C2FD699A3AE8F77E1DE942C6,
 	StateMachine_Update_mA354B9A7C6F6B28AB5824F0647015C0669349683,
 	StateMachine__ctor_m386AC4CE9F753E4EF79C5C6AEDD6A01F8E696F86,
+	DataHolder_Start_m2F6A1410AEC0753A4150E7F8509D6740B2CBEC09,
+	DataHolder__ctor_m23EB731F00EAC4C566B6ED9FE00D6CFAE5F483AA,
+	MapScript_Start_m40E144A431BE07207DD024F50385C56C28C621BA,
+	MapScript_GetUnusedNest_mAF77824CDFBCE1B47F06D43908D1CEB000538E32,
+	MapScript_GetUnnocupiedSpace_mF46B64C7425440D2910DE8705D352E4094E7765C,
+	MapScript__ctor_mD60CA67676EBEBFEF7CD9542E9493550478283BC,
+	NestNavigator_Start_m6F7F23F114403CAD2AB1E2BF156BF019F0D5566D,
+	NestNavigator_Update_mFC4C292B50F3795383E873EBE5FCF08ED0330122,
+	NestNavigator__ctor_m7E9790D57E18876AF6DC8EBF6B4D8D4EAE3FDFD4,
+	NestScript_Start_mCC7A562DE408C8A8D822216D2EFD3A91C8727651,
+	NestScript__ctor_mEBF5ED98F30808356F1BC73F3E86BD5D4848E7D7,
 	SliderValueToText_Start_m82C55275BBFC11A9AD3888663509D2F736CB0025,
 	SliderValueToText_ShowSliderValue_mD42B3420B75F215F92859A4D57A9B08E9C554AE3,
 	SliderValueToText__ctor_m043433A8C0B9E80DBC4E6F9094FBB1AC68A80F13,
@@ -267,99 +309,113 @@ static Il2CppMethodPointer s_methodPointers[84] =
 	TutorialTesting_OnStateUpdate_m3B77D515E0EFD01AF7C07FDB5DEEB18ADCED193B,
 	TutorialTesting__ctor_mB38306AFEF0B5F7C74021F9E5E207D277EEDDC41,
 };
-static const int32_t s_InvokerIndices[84] = 
+static const int32_t s_InvokerIndices[98] = 
 {
-	568,
-	2037,
-	568,
-	2037,
-	2037,
-	2037,
-	568,
-	568,
-	568,
-	2037,
-	3423,
-	568,
-	568,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2002,
-	2037,
-	1693,
-	2037,
-	1679,
-	2037,
-	2023,
-	2002,
-	2037,
-	2002,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2002,
-	2037,
-	1679,
-	2037,
-	2023,
-	2002,
-	2037,
-	2002,
-	2037,
-	2037,
-	2002,
-	2037,
-	1679,
-	2037,
-	2023,
-	2002,
-	2037,
-	2002,
-	1693,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	1630,
-	2037,
-	1693,
-	2037,
-	2002,
-	2037,
-	1679,
-	2037,
-	2023,
-	2002,
-	2037,
-	2002,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	2037,
-	568,
-	568,
-	2037,
-	568,
-	568,
-	2037,
+	576,
+	2056,
+	576,
+	2056,
+	2056,
+	2056,
+	576,
+	576,
+	576,
+	2056,
+	3465,
+	576,
+	576,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2021,
+	2056,
+	1710,
+	2056,
+	1696,
+	2056,
+	2042,
+	2021,
+	2056,
+	2021,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2021,
+	2056,
+	1696,
+	2056,
+	2042,
+	2021,
+	2056,
+	2021,
+	2056,
+	2056,
+	2021,
+	2056,
+	1696,
+	2056,
+	2042,
+	2021,
+	2056,
+	2021,
+	2056,
+	2056,
+	2056,
+	1710,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	1646,
+	2056,
+	1710,
+	2056,
+	2021,
+	2056,
+	1696,
+	2056,
+	2042,
+	2021,
+	2056,
+	2021,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	2056,
+	576,
+	576,
+	2056,
+	576,
+	576,
+	2056,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	84,
+	98,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

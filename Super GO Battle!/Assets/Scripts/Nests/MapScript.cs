@@ -215,7 +215,6 @@ public class MapScript : MonoBehaviour
             GetUnnocupiedSpace();
         }
     }
-    
 }
 
 //load item in environments folder of same name

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7045405182043620629}
   m_Layer: 0
   m_Name: GroundSpike
-  m_TagString: GroundSpike
+  m_TagString: ProjectileA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
