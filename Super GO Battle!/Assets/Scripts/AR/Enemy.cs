@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     public GameObject projectile;
@@ -33,6 +33,13 @@ public class Enemy : MonoBehaviour
         if (collision.tag == "ProjectileB")
         {
             health -= Mathf.FloorToInt(collision.GetComponent<ProjectileScript>().totalDamage);
+        }
+
+        if(health <= 0)
+        {
+            print("You Win!!");
+            SceneManager.LoadScene("NestMapless");
+            GameObject.FindGameObjectWithTag("Map").SetActive(true);
         }
     }
 

@@ -12,6 +12,8 @@ public class NestNavigator : MonoBehaviour
     private float currentDistance;
     private float maxDistance;
 
+    private int holders;
+
     private UnityEngine.UI.Text distanceText;
     private UnityEngine.UI.Text goalText;
 
@@ -46,9 +48,16 @@ public class NestNavigator : MonoBehaviour
 
         if (currentDistance == maxDistance)
         {
+            currentDistance = 0;
+            localDataHolder.GetComponent<DataHolder>().map = transform.parent.gameObject;
             localDataHolder.monster = localNestScript.Monster;
-            Instantiate(DataHolder);
+            if (holders == 0)
+            {
+                Instantiate(DataHolder);
+                holders = 1;
+            }
             SceneManager.LoadScene("FIGHT");
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }

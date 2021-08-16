@@ -59,6 +59,9 @@ public class MapScript : MonoBehaviour
 
     private void Start()
     {
+
+        DontDestroyOnLoad(transform.gameObject);
+
         selectedEnvironmentOdd = environmentOdds[Random.Range(0, environmentOdds.Length)]; //Generates the environment for the map
 
         difficulty = Random.Range(1f, 2f);

@@ -3,8 +3,8 @@
     "m_SelectedPackage": {
         "deviceId": "a7127461",
         "name": "com.AirshipStudios.SuperGOBattle",
-        "processId": 8048,
-        "exited": true
+        "processId": 13287,
+        "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
@@ -61,6 +61,24 @@
             "name": "com.AirshipStudios.SuperGOBattle",
             "processId": 8048,
             "exited": true
+        },
+        {
+            "deviceId": "a7127461",
+            "name": "com.AirshipStudios.SuperGOBattle",
+            "processId": 6459,
+            "exited": false
+        },
+        {
+            "deviceId": "a7127461",
+            "name": "com.AirshipStudios.SuperGOBattle",
+            "processId": 7406,
+            "exited": true
+        },
+        {
+            "deviceId": "a7127461",
+            "name": "com.AirshipStudios.SuperGOBattle",
+            "processId": 13287,
+            "exited": false
         }
     ],
     "m_Tags": {

@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FIGHT.unity
     guid: 8dd664e05500b964ca23e39fbe309067
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: b9f2d9fc50223dc4d9bfbca10f0d4f42
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/NestMapless.unity
+    guid: 2bd51c0cb77537c4488f5489efc05a75
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1e10d37e74dfcd14f90f98c7c98c7e36,
       type: 2}
