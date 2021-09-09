@@ -109,6 +109,7 @@ public class MapScript : MonoBehaviour
                 nestList.Add(Instantiate(LocalNest, oldDistance = new Vector3(Random.Range(-25f, 25f), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0), Quaternion.identity, this.gameObject.transform));
                 placedNests.Add(oldDistance);
                 oldNest.GetComponent<NestScript>().nextNest.Add(nestList[counter - 1]);
+                oldNest.GetComponent<NestScript>().nextNest.RemoveAt(0);
                 oldNest = nestList[counter - 1];
                 counter += 1;
             }
@@ -158,6 +159,8 @@ public class MapScript : MonoBehaviour
             hasBranch.Add(randomNest);
             branchCounter = 0;
         }
+        //print(nestList[nestList.Count - 1]);
+        nestList[nestList.Count - 1].GetComponent<NestScript>().nextNest.RemoveAt(0);
     }
 
     void GetUnusedNest()
@@ -177,7 +180,7 @@ public class MapScript : MonoBehaviour
     void GetUnnocupiedSpace()
     {
         print(randomSide);
-        if(randomSide == 0)
+        if (randomSide == 0)
         {
             test = new Vector3((Random.Range(-40f * rangeMultiplyer, -15f * rangeMultiplyer)), oldDistance.y + (Mathf.RoundToInt(notRoundedDistance) * 100) / (nestCount * 6) + 20, 0);
         }
@@ -191,7 +194,7 @@ public class MapScript : MonoBehaviour
 
         if (checkResult == false)
         {
-            if(branchCounter == 0)
+            if (branchCounter == 0)
             {
                 print("Functioning!");
                 tempOldNest = Instantiate(LocalNest, oldDistance = new Vector3(test.x, test.y, 0), Quaternion.identity, randomNest.transform);
@@ -209,6 +212,7 @@ public class MapScript : MonoBehaviour
                 rangeMultiplyer = 1;
                 oldNest.GetComponent<NestScript>().nextNest.Add(isBranch[branchCounter - 1]);
                 oldNest = isBranch[branchCounter - 1];
+
             }
         }
         else
@@ -217,6 +221,8 @@ public class MapScript : MonoBehaviour
             //print(rangeMultiplyer);
             GetUnnocupiedSpace();
         }
+
+
     }
 }
 

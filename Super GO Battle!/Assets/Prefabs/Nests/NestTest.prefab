@@ -55,10 +55,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: Rock Man
-  maxDistance: 1
-  oldPos: {x: 66.22313, y: 65.31297, z: 0}
-  order: 10
+  Monster: Gull
+  maxDistance: 3
+  oldPos: {x: -130.1517, y: 59.362503, z: 0}
+  order: 12
   nextNest:
   - {fileID: 0}
   hasFought: 0

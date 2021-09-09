@@ -9,6 +9,8 @@ public class NestNavigator : MonoBehaviour
     public GameObject currentNest;
     private GameObject nextNest;
 
+    private int hasSetNextNest;
+
     private float currentDistance;
     private float maxDistance;
 
@@ -22,9 +24,11 @@ public class NestNavigator : MonoBehaviour
 
     public string environment;
 
-    void Start()
+    void OnEnable()
     {
+        hasSetNextNest = 0;
         gameObject.transform.position = currentNest.transform.position;
+
         distanceText = GameObject.Find("Distance").GetComponent<Text>();
         goalText = GameObject.Find("DistanceGoal").GetComponent<Text>();
 
@@ -37,6 +41,22 @@ public class NestNavigator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(hasSetNextNest == 0)
+        {
+            if (currentNest.GetComponent<NestScript>().nextNest.Count <= 1)
+            {
+                nextNest = currentNest.GetComponent<NestScript>().nextNest[0];
+                print(nextNest);
+            }
+            else
+            {
+                //CREATE UI FOR NUMBER OF NESTS
+                //BELOW LINE JUST SETS NEXTNEST TO FIRST ONE IN LIST!
+                nextNest = currentNest.GetComponent<NestScript>().nextNest[0];
+                print(nextNest);
+            }
+            hasSetNextNest = 1;
+        }
         distanceText.text = currentDistance.ToString();
         goalText.text = maxDistance.ToString();
 
@@ -48,9 +68,11 @@ public class NestNavigator : MonoBehaviour
 
         if (currentDistance == maxDistance)
         {
+            currentNest = nextNest;
             currentDistance = 0;
             localDataHolder.GetComponent<DataHolder>().map = transform.parent.gameObject;
             localDataHolder.monster = localNestScript.Monster;
+
             if (holders == 0)
             {
                 Instantiate(DataHolder);
