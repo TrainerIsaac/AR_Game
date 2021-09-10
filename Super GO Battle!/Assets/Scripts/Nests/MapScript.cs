@@ -52,7 +52,6 @@ public class MapScript : MonoBehaviour
     private int randomSide;
     private GameObject oldNest;
     private GameObject tempOldNest;
-    private List<GameObject> lastNests = new List<GameObject>();
 
     private List<GameObject> children = new List<GameObject>();
     private int childCounter = 0;
@@ -166,40 +165,48 @@ public class MapScript : MonoBehaviour
         //Removes null nextnest from the beginning of the last nest's next nest list.
         nestList[nestList.Count - 1].GetComponent<NestScript>().nextNest.RemoveAt(0);
 
+        //Sets the LocalNest value to the boss of whichever environment is chosen, this being signified by the [1], rather than the usual [0]
         LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][1][Random.Range(1,2)];
         LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
         LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
         LocalNest.name = "BOSS";
         
-
+        // finds every object with the NestScript - essentially finding every nest
         NestScript[] withScript = GameObject.FindObjectsOfType<NestScript>();
         float highestY = 0;
+
+        //For each nest
         foreach (NestScript script in withScript)
         {
-            print(roundedNestCount);
+            //If the order value is equal to the nest count - essentially meaning if the nest is the last one in its branch
             if(script.GetComponent<NestScript>().order == roundedNestCount)
             {
+                //if the Y value of this nest is higher then highest Y
                 if(script.transform.position.y > highestY)
                 {
+                    //set highest Y to current nest value. This ensures that the highestY value is equal to the nest's Y value that's the largest of them all
                     highestY = script.transform.position.y;
                 }
-
+                //Creates a child to bare a linerender that connects from each final nest to the boss.
+                //Since each gameobject can only have one line renderer, creating a new object for each linerenderer is unfortunately necessary.
                 GameObject lineChild = new GameObject("LineChild" + childCounter.ToString());
                 childCounter += 1;
 
                 lineChild.AddComponent<LineRenderer>();
+                //Sets line's first point to the current nest
                 lineChild.GetComponent<LineRenderer>().SetPosition(0, script.transform.position);
 
                 lineChild.transform.parent = transform;
                 children.Add(lineChild);
-                lastNests.Add(script.gameObject);
+                //Adds Boss to nextnest list of current nest
                 script.GetComponent<NestScript>().nextNest.Add(LocalNest);
+                //Removes null nest
                 script.GetComponent<NestScript>().nextNest.RemoveAt(0);
-                print(script.name);
             }
 
         }
         Instantiate(LocalNest, new Vector3(0, highestY + 50, 0), Quaternion.identity, this.gameObject.transform);
+        //Finally sets the line's second point to the boss nest, finishing the line drawn from each final nest to the boss.
         foreach(GameObject child in children)
         {
             child.GetComponent<LineRenderer>().SetPosition(1, new Vector3(0, highestY + 50, 0));

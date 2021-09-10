@@ -56,9 +56,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monster: Jesus
-  maxDistance: 5
-  oldPos: {x: -132.39127, y: 76.40129, z: 0}
-  order: 10
+  maxDistance: 3
+  oldPos: {x: -178.52953, y: 43.972855, z: 0}
+  order: 9
   nextNest:
   - {fileID: 0}
   hasFought: 0
