@@ -52,6 +52,10 @@ public class MapScript : MonoBehaviour
     private int randomSide;
     private GameObject oldNest;
     private GameObject tempOldNest;
+    private List<GameObject> lastNests = new List<GameObject>();
+
+    private List<GameObject> children = new List<GameObject>();
+    private int childCounter = 0;
 
     //This will be in charge of generating the nest's theme
     //The theme will contain a pool of monsters that it can select from
@@ -159,8 +163,47 @@ public class MapScript : MonoBehaviour
             hasBranch.Add(randomNest);
             branchCounter = 0;
         }
-        //print(nestList[nestList.Count - 1]);
+        //Removes null nextnest from the beginning of the last nest's next nest list.
         nestList[nestList.Count - 1].GetComponent<NestScript>().nextNest.RemoveAt(0);
+
+        LocalNest.GetComponent<NestScript>().Monster = environments[selectedEnvironmentOdd][1][Random.Range(1,2)];
+        LocalNest.GetComponent<NestScript>().maxDistance = Mathf.RoundToInt(notRoundedDistance);
+        LocalNest.GetComponent<NestScript>().oldPos = oldDistance;
+        LocalNest.name = "BOSS";
+        
+
+        NestScript[] withScript = GameObject.FindObjectsOfType<NestScript>();
+        float highestY = 0;
+        foreach (NestScript script in withScript)
+        {
+            print(roundedNestCount);
+            if(script.GetComponent<NestScript>().order == roundedNestCount)
+            {
+                if(script.transform.position.y > highestY)
+                {
+                    highestY = script.transform.position.y;
+                }
+
+                GameObject lineChild = new GameObject("LineChild" + childCounter.ToString());
+                childCounter += 1;
+
+                lineChild.AddComponent<LineRenderer>();
+                lineChild.GetComponent<LineRenderer>().SetPosition(0, script.transform.position);
+
+                lineChild.transform.parent = transform;
+                children.Add(lineChild);
+                lastNests.Add(script.gameObject);
+                script.GetComponent<NestScript>().nextNest.Add(LocalNest);
+                script.GetComponent<NestScript>().nextNest.RemoveAt(0);
+                print(script.name);
+            }
+
+        }
+        Instantiate(LocalNest, new Vector3(0, highestY + 50, 0), Quaternion.identity, this.gameObject.transform);
+        foreach(GameObject child in children)
+        {
+            child.GetComponent<LineRenderer>().SetPosition(1, new Vector3(0, highestY + 50, 0));
+        }
     }
 
     void GetUnusedNest()

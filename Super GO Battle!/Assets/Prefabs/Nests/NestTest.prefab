@@ -55,10 +55,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d590c66d3b9fe8544ab6c636cb8747b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: Gull
-  maxDistance: 3
-  oldPos: {x: -130.1517, y: 59.362503, z: 0}
-  order: 12
+  Monster: Jesus
+  maxDistance: 5
+  oldPos: {x: -132.39127, y: 76.40129, z: 0}
+  order: 10
   nextNest:
   - {fileID: 0}
   hasFought: 0
@@ -279,7 +279,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 3
   m_Points:
-  - {x: 0, y: 0}
+  - {x: -47.62223, y: -54.99884}
   - {x: 0, y: 0}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
