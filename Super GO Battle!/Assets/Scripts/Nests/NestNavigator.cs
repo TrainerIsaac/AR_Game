@@ -14,18 +14,19 @@ public class NestNavigator : MonoBehaviour
     private float currentDistance;
     private float maxDistance;
 
-    private int holders;
-
     private UnityEngine.UI.Text distanceText;
     private UnityEngine.UI.Text goalText;
 
     private DataHolder localDataHolder;
     private NestScript localNestScript;
 
+    private GameObject destroyableData;
+
     public string environment;
 
     void OnEnable()
     {
+        Destroy(destroyableData);
         hasSetNextNest = 0;
         gameObject.transform.position = currentNest.transform.position;
 
@@ -46,14 +47,16 @@ public class NestNavigator : MonoBehaviour
             if (currentNest.GetComponent<NestScript>().nextNest.Count <= 1)
             {
                 nextNest = currentNest.GetComponent<NestScript>().nextNest[0];
-                print(nextNest);
+                localDataHolder.monster = localNestScript.Monster;
+                Debug.Log(currentNest.GetComponent<NestScript>().Monster);
             }
             else
             {
                 //CREATE UI FOR NUMBER OF NESTS
                 //BELOW LINE JUST SETS NEXTNEST TO FIRST ONE IN LIST!
                 nextNest = currentNest.GetComponent<NestScript>().nextNest[0];
-                print(nextNest);
+                DataHolder.GetComponent<DataHolder>().monster = currentNest.GetComponent<NestScript>().Monster;
+                Debug.Log(currentNest.GetComponent<NestScript>().Monster);
             }
             hasSetNextNest = 1;
         }
@@ -71,13 +74,9 @@ public class NestNavigator : MonoBehaviour
             currentNest = nextNest;
             currentDistance = 0;
             localDataHolder.GetComponent<DataHolder>().map = transform.parent.gameObject;
-            localDataHolder.monster = localNestScript.Monster;
 
-            if (holders == 0)
-            {
-                Instantiate(DataHolder);
-                holders = 1;
-            }
+            destroyableData = Instantiate(DataHolder);
+
             SceneManager.LoadScene("FIGHT");
             transform.parent.gameObject.SetActive(false);
         }
