@@ -61,12 +61,12 @@
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Whirlwind.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\ProjectileScript.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Ground Spikes.cs" />
-    <Compile Include="Assets\Scripts\AR\StateMachine.cs" />
     <Compile Include="Assets\Scripts\Nests\DataHolder.cs" />
     <Compile Include="Assets\Scripts\AR\Attacks\BulletBarrage.cs" />
     <Compile Include="Assets\CombatScripts\MoveScenes.cs" />
     <Compile Include="Assets\Testing.cs" />
     <Compile Include="Assets\Scripts\AR\PlayerScript.cs" />
+    <Compile Include="Assets\MapRegenerator.cs" />
     <Compile Include="Assets\CombatScripts\Rock.cs" />
     <Compile Include="Assets\Scripts\AR\LightEstimation.cs" />
     <Compile Include="Assets\Scripts\Nests\NestScript.cs" />
@@ -79,7 +79,6 @@
     <Compile Include="Assets\SliderValueToText.cs" />
     <Compile Include="Assets\Scripts\AR\Attack Attributes\Rapid Fire.cs" />
     <Compile Include="Assets\CombatScripts\RapidFire.cs" />
-    <Compile Include="Assets\MapRegenerator.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Models\Placeholders\Solrock\Tag.txt" />

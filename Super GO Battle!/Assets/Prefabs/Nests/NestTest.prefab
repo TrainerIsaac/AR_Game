@@ -56,9 +56,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monster: Satan
-  maxDistance: 3
-  oldPos: {x: -223.50142, y: 136.4567, z: 0}
-  order: 12
+  maxDistance: 4
+  oldPos: {x: 103.19134, y: 104.50437, z: 0}
+  order: 11
   nextNest:
   - {fileID: 0}
   hasFought: 0
