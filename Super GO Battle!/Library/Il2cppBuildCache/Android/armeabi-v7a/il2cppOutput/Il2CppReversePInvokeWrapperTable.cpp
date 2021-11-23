@@ -36,7 +36,7 @@ IL2CPP_EXTERN_C_END
 
 
 // System.ValueType
-struct  ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
+struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
 {
 public:
 
@@ -53,7 +53,7 @@ struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_com
 };
 
 // System.Enum
-struct  Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
 {
 public:
 
@@ -87,7 +87,7 @@ struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_com
 };
 
 // System.Guid
-struct  Guid_t 
+struct Guid_t 
 {
 public:
 	// System.Int32 System.Guid::_a
@@ -254,7 +254,7 @@ public:
 
 
 // System.IntPtr
-struct  IntPtr_t 
+struct IntPtr_t 
 {
 public:
 	// System.Void* System.IntPtr::m_value
@@ -288,7 +288,7 @@ public:
 
 
 // UnityEngine.RectInt
-struct  RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 
+struct RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 
 {
 public:
 	// System.Int32 UnityEngine.RectInt::m_XMin
@@ -336,7 +336,7 @@ public:
 
 
 // UnityEngine.Vector2Int
-struct  Vector2Int_tF49F5C2443670DE126D9EC8DBE81D8F480EAA6E9 
+struct Vector2Int_tF49F5C2443670DE126D9EC8DBE81D8F480EAA6E9 
 {
 public:
 	// System.Int32 UnityEngine.Vector2Int::m_X
@@ -430,7 +430,7 @@ public:
 
 
 // System.Void
-struct  Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
+struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
 {
 public:
 	union
@@ -445,8 +445,62 @@ public:
 };
 
 
+// UnityEngine.XR.ARCore.ArCameraConfigFilter
+struct ArCameraConfigFilter_t221B7F0FF74822E577F6C1577DCD66F0F1123F18 
+{
+public:
+	// System.IntPtr UnityEngine.XR.ARCore.ArCameraConfigFilter::m_Self
+	intptr_t ___m_Self_0;
+
+public:
+	inline static int32_t get_offset_of_m_Self_0() { return static_cast<int32_t>(offsetof(ArCameraConfigFilter_t221B7F0FF74822E577F6C1577DCD66F0F1123F18, ___m_Self_0)); }
+	inline intptr_t get_m_Self_0() const { return ___m_Self_0; }
+	inline intptr_t* get_address_of_m_Self_0() { return &___m_Self_0; }
+	inline void set_m_Self_0(intptr_t value)
+	{
+		___m_Self_0 = value;
+	}
+};
+
+
+// UnityEngine.XR.ARCore.ArConfig
+struct ArConfig_t2E38AE690FF4FF95EE8FDF4E03AD0C640484B40E 
+{
+public:
+	// System.IntPtr UnityEngine.XR.ARCore.ArConfig::m_Self
+	intptr_t ___m_Self_0;
+
+public:
+	inline static int32_t get_offset_of_m_Self_0() { return static_cast<int32_t>(offsetof(ArConfig_t2E38AE690FF4FF95EE8FDF4E03AD0C640484B40E, ___m_Self_0)); }
+	inline intptr_t get_m_Self_0() const { return ___m_Self_0; }
+	inline intptr_t* get_address_of_m_Self_0() { return &___m_Self_0; }
+	inline void set_m_Self_0(intptr_t value)
+	{
+		___m_Self_0 = value;
+	}
+};
+
+
+// UnityEngine.XR.ARCore.ArSession
+struct ArSession_tC5D0D839684E5D0A103AC9B421B51BE4E661668E 
+{
+public:
+	// System.IntPtr UnityEngine.XR.ARCore.ArSession::m_Self
+	intptr_t ___m_Self_0;
+
+public:
+	inline static int32_t get_offset_of_m_Self_0() { return static_cast<int32_t>(offsetof(ArSession_tC5D0D839684E5D0A103AC9B421B51BE4E661668E, ___m_Self_0)); }
+	inline intptr_t get_m_Self_0() const { return ___m_Self_0; }
+	inline intptr_t* get_address_of_m_Self_0() { return &___m_Self_0; }
+	inline void set_m_Self_0(intptr_t value)
+	{
+		___m_Self_0 = value;
+	}
+};
+
+
 // UnityEngine.TextureFormat
-struct  TextureFormat_tBED5388A0445FE978F97B41D247275B036407932 
+struct TextureFormat_tBED5388A0445FE978F97B41D247275B036407932 
 {
 public:
 	// System.Int32 UnityEngine.TextureFormat::value__
@@ -464,7 +518,7 @@ public:
 
 
 // UnityEngine.XR.ARSubsystems.XRCpuImage/AsyncConversionStatus
-struct  AsyncConversionStatus_t94171EDB7E6E25979DFCEF01F7B6EA6B8A5DAD42 
+struct AsyncConversionStatus_t94171EDB7E6E25979DFCEF01F7B6EA6B8A5DAD42 
 {
 public:
 	// System.Int32 UnityEngine.XR.ARSubsystems.XRCpuImage/AsyncConversionStatus::value__
@@ -482,7 +536,7 @@ public:
 
 
 // UnityEngine.XR.ARSubsystems.XRCpuImage/Transformation
-struct  Transformation_t5812B66180F359977F76AB67CC9E923CF0B55938 
+struct Transformation_t5812B66180F359977F76AB67CC9E923CF0B55938 
 {
 public:
 	// System.Int32 UnityEngine.XR.ARSubsystems.XRCpuImage/Transformation::value__
@@ -500,7 +554,7 @@ public:
 
 
 // UnityEngine.XR.ARCore.ARCoreSessionSubsystem/NativeApi/ArAvailability
-struct  ArAvailability_tE538B006129766E37E893353B71F627B8040A880 
+struct ArAvailability_tE538B006129766E37E893353B71F627B8040A880 
 {
 public:
 	// System.Int32 UnityEngine.XR.ARCore.ARCoreSessionSubsystem/NativeApi/ArAvailability::value__
@@ -518,7 +572,7 @@ public:
 
 
 // UnityEngine.XR.ARCore.ARCoreSessionSubsystem/NativeApi/ArPrestoApkInstallStatus
-struct  ArPrestoApkInstallStatus_t51D537681702853840D138A766B1D6BA7674062C 
+struct ArPrestoApkInstallStatus_t51D537681702853840D138A766B1D6BA7674062C 
 {
 public:
 	// System.Int32 UnityEngine.XR.ARCore.ARCoreSessionSubsystem/NativeApi/ArPrestoApkInstallStatus::value__
@@ -536,7 +590,7 @@ public:
 
 
 // UnityEngine.XR.ARSubsystems.XRCpuImage/ConversionParams
-struct  ConversionParams_t3DDB9752BA823641A302D0783C14048D9B09B74A 
+struct ConversionParams_t3DDB9752BA823641A302D0783C14048D9B09B74A 
 {
 public:
 	// UnityEngine.RectInt UnityEngine.XR.ARSubsystems.XRCpuImage/ConversionParams::m_InputRect
@@ -589,22 +643,24 @@ public:
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCameraBackground_BeforeBackgroundRenderHandler_m1A225B853F7A95788FB799D22868A946C99C2975(int32_t ___eventId0);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0(intptr_t ___arg0);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_XRCpuImage_OnAsyncConversionComplete_m60DC813F1A2B8A59F993D245683847D933D292A9(int32_t ___status0, ConversionParams_t3DDB9752BA823641A302D0783C14048D9B09B74A  ___conversionParams1, intptr_t ___dataPtr2, int32_t ___dataLength3, intptr_t ___context4);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_OnBeforeGetCameraConfiguration_m38BB627D1EB76A533FC804BB76815EFF9F8F52A4(intptr_t ___providerHandle0, ArSession_tC5D0D839684E5D0A103AC9B421B51BE4E661668E  ___session1, ArCameraConfigFilter_t221B7F0FF74822E577F6C1577DCD66F0F1123F18  ___filter2);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_CameraPermissionRequestProvider_m0E9468644682F3042A5368601E230B46C7315C59(Il2CppMethodPointer ___callback0, intptr_t ___context1);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_OnApkInstallation_mB4577B455FE8DAC994BD4BCC3ADF2C239C9A0499(int32_t ___status0, intptr_t ___context1);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_OnCheckApkAvailability_mF296B6B889C9E96E19074265AEBABC32A9056751(int32_t ___availability0, intptr_t ___context1);
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_SetConfigurationCallback_mFF36A044075B42081017D3D8841D01D16A552679(intptr_t ___session0, intptr_t ___config1, intptr_t ___context2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_SetConfigurationCallback_mC1501045CC4A96222724006C1000E810B0783443(ArSession_tC5D0D839684E5D0A103AC9B421B51BE4E661668E  ___session0, ArConfig_t2E38AE690FF4FF95EE8FDF4E03AD0C640484B40E  ___config1, intptr_t ___context2);
 extern "C" Guid_t  DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_GenerateGuid_mA52E9502CED2C91DD0681FFB36AA2C9AC876DD0B();
 
 
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
-const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[8] = 
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[9] = 
 {
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCameraBackground_BeforeBackgroundRenderHandler_m1A225B853F7A95788FB799D22868A946C99C2975),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_XRCpuImage_OnAsyncConversionComplete_m60DC813F1A2B8A59F993D245683847D933D292A9),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_OnBeforeGetCameraConfiguration_m38BB627D1EB76A533FC804BB76815EFF9F8F52A4),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_CameraPermissionRequestProvider_m0E9468644682F3042A5368601E230B46C7315C59),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_OnApkInstallation_mB4577B455FE8DAC994BD4BCC3ADF2C239C9A0499),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_OnCheckApkAvailability_mF296B6B889C9E96E19074265AEBABC32A9056751),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_SetConfigurationCallback_mFF36A044075B42081017D3D8841D01D16A552679),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_SetConfigurationCallback_mC1501045CC4A96222724006C1000E810B0783443),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_GenerateGuid_mA52E9502CED2C91DD0681FFB36AA2C9AC876DD0B),
 };

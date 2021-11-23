@@ -5,21 +5,95 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637507307500000000
-    m_Hash: 294225818
+      ticks: 637726757480000000
+    m_Hash: 3695257903
   m_LockFileStatus:
     m_FilePath: E:/Current Projects/AR Game/AR_Game/Super GO Battle!/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637646190440000000
-    m_Hash: 2598438850
+      ticks: 637726757480000000
+    m_Hash: 3472042111
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.google.ar.core.arfoundation.extensions@file:C:\Users\isaac\Downloads\arcore-unity-extensions-1.28.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 1.28.0
+      source: 6
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.google.ar.core.arfoundation.extensions@d2f25be648a3-1637057528446
+      assetPath: Packages/com.google.ar.core.arfoundation.extensions
+      name: com.google.ar.core.arfoundation.extensions
+      displayName: ARCore Extensions
+      author:
+        name: Google LLC
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Google ARCore Extensions for AR Foundation. This package provides
+        access to ARCore features not covered by AR Foundation's cross platform API.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.unity.xr.arfoundation
+        version: 4.1.5
+      - name: com.unity.xr.arcore
+        version: 4.1.5
+      resolvedDependencies:
+      - name: com.unity.xr.arfoundation
+        version: 4.1.7
+      - name: com.unity.xr.arsubsystems
+        version: 4.1.7
+      - name: com.unity.subsystemregistration
+        version: 1.1.0
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
+      - name: com.unity.modules.vr
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.xr
+        version: 1.0.0
+      - name: com.unity.xr.legacyinputhelpers
+        version: 2.1.7
+      - name: com.unity.xr.arcore
+        version: 4.1.7
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.unity.collab-proxy@1.3.9
       testable: 0
       isDirectDependency: 1
@@ -59,6 +133,20 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 1.4.9
+        - 1.5.7
+        - 1.6.0
+        - 1.7.1
+        - 1.8.0
+        - 1.9.0
+        - 1.10.2
+        - 1.11.2
+        - 1.12.5
+        - 1.13.5
+        - 1.14.1
+        - 1.14.4
+        - 1.15.1
+        - 1.15.4
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -71,6 +159,14 @@ m_PackageAssets:
         - 2.1.0-preview.6
         compatible:
         - 1.3.9
+        - 1.4.9
+        - 1.5.7
+        - 1.6.0
+        - 1.8.0
+        - 1.10.2
+        - 1.12.5
+        - 1.14.1
+        - 1.14.4
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -160,6 +256,8 @@ m_PackageAssets:
         - 3.0.3
         - 3.0.4
         - 3.0.5
+        - 3.0.6
+        - 3.0.7
         compatible:
         - 1.0.2
         - 1.0.6
@@ -184,13 +282,15 @@ m_PackageAssets:
         - 3.0.3
         - 3.0.4
         - 3.0.5
+        - 3.0.6
+        - 3.0.7
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.1
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.20
+        version: 1.1.24
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -218,12 +318,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.5
+    - packageId: com.unity.ide.visualstudio@2.0.7
       testable: 0
       isDirectDependency: 1
-      version: 2.0.5
+      version: 2.0.7
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -252,6 +352,10 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
+        - 2.0.8
+        - 2.0.9
+        - 2.0.11
+        - 2.0.12
         compatible:
         - 1.0.2
         - 1.0.3
@@ -265,9 +369,23 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
-        verified: 2.0.7
-      dependencies: []
-      resolvedDependencies: []
+        - 2.0.8
+        - 2.0.9
+        - 2.0.11
+        - 2.0.12
+        verified: 2.0.12
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.9
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.24
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords: []
       registry:
         id: main
@@ -281,13 +399,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637400980850000000
+      datePublishedTicks: 637486638490000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 83ca94e82bb6da515dc57e0d860b6b2224f56991
+        revision: dec282022c7a95fada560c36f53da9dd155a142c
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
@@ -322,6 +440,7 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.2
         - 1.2.3
+        - 1.2.4
         compatible:
         - 1.0.2
         - 1.0.3
@@ -334,7 +453,8 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.2
         - 1.2.3
-        verified: 1.2.3
+        - 1.2.4
+        verified: 1.2.4
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -358,12 +478,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
         path: 
-    - packageId: com.unity.mobile.android-logcat@1.2.0
+    - packageId: com.unity.mobile.android-logcat@1.2.1
       testable: 0
       isDirectDependency: 1
-      version: 1.2.0
+      version: 1.2.1
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.mobile.android-logcat@1.2.0
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
       assetPath: Packages/com.unity.mobile.android-logcat
       name: com.unity.mobile.android-logcat
       displayName: Android Logcat
@@ -394,6 +514,8 @@ m_PackageAssets:
         - 1.2.0-preview
         - 1.2.0
         - 1.2.1
+        - 1.2.2
+        - 1.2.3
         compatible:
         - 0.1.5-preview
         - 0.2.7-preview
@@ -405,7 +527,9 @@ m_PackageAssets:
         - 1.2.0-preview
         - 1.2.0
         - 1.2.1
-        verified: 1.1.1
+        - 1.2.2
+        - 1.2.3
+        verified: 1.2.3
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -424,13 +548,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637344782330000000
+      datePublishedTicks: 637479648140000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.mobile.logcat.git
-        revision: e2a927e34d7ac9493c08f3f2a0bdd28dcaa6a589
+        revision: 1bb3d0b67733fc73fbd6c88358cfd882d64cc428
         path: 
     - packageId: com.unity.mobile.notifications@1.3.2
       testable: 0
@@ -486,6 +610,8 @@ m_PackageAssets:
         - 1.2.1-preview
         - 1.3.0
         - 1.3.2
+        - 1.4.1
+        - 1.4.2
         compatible:
         - 1.0.0-preview.4
         - 1.0.0-preview.5
@@ -516,6 +642,8 @@ m_PackageAssets:
         - 1.2.1-preview
         - 1.3.0
         - 1.3.2
+        - 1.4.1
+        - 1.4.2
         verified: 1.3.2
       dependencies:
       - name: com.unity.modules.androidjni
@@ -548,12 +676,84 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.mobile.notifications.git
         revision: 2829196ea1779d64c68c36b0a95a19d3945889fd
         path: 
-    - packageId: com.unity.test-framework@1.1.20
+    - packageId: com.unity.multiplayer-hlapi@1.1.1
       testable: 0
       isDirectDependency: 1
-      version: 1.1.20
+      version: 1.1.1
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.test-framework@1.1.20
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.multiplayer-hlapi@1.1.1
+      assetPath: Packages/com.unity.multiplayer-hlapi
+      name: com.unity.multiplayer-hlapi
+      displayName: Multiplayer HLAPI
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The high level API component of the Unity Multiplayer system.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.2.4-preview
+        - 0.2.5-preview
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.4
+        - 1.0.6
+        - 1.0.8
+        - 1.1.1
+        compatible:
+        - 0.2.4-preview
+        - 0.2.5-preview
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.4
+        - 1.0.6
+        - 1.0.8
+        - 1.1.1
+        verified: 
+      dependencies:
+      - name: com.unity.nuget.mono-cecil
+        version: 1.10.1
+      resolvedDependencies:
+      - name: com.unity.nuget.mono-cecil
+        version: 1.10.1
+      keywords:
+      - multiplayer
+      - networking
+      - hlapi
+      - high-level
+      - api
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637560226460000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.multiplayer-hlapi.git
+        revision: bab548572ce9bd49e42fa76ed4edd1972be375c9
+        path: 
+    - packageId: com.unity.test-framework@1.1.24
+      testable: 0
+      isDirectDependency: 1
+      version: 1.1.24
+      source: 1
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -596,11 +796,17 @@ m_PackageAssets:
         - 1.1.20
         - 1.1.22
         - 1.1.24
+        - 1.1.26
+        - 1.1.27
+        - 1.1.29
+        - 1.1.30
         compatible:
-        - 1.1.20
-        - 1.1.22
         - 1.1.24
-        verified: 1.1.24
+        - 1.1.26
+        - 1.1.27
+        - 1.1.29
+        - 1.1.30
+        verified: 1.1.30
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -630,13 +836,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637429759710000000
+      datePublishedTicks: 637505702940000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: f04391d9987f4a534f886a9638b011d53e5871d8
+        revision: e6fe8892689398c0d9aba4587e0ba69edc3d82b8
         path: 
     - packageId: com.unity.textmeshpro@3.0.1
       testable: 0
@@ -714,6 +920,9 @@ m_PackageAssets:
         - 1.5.1
         - 1.5.3
         - 1.5.4
+        - 1.5.5
+        - 1.5.6
+        - 1.6.0-preview.1
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -733,6 +942,10 @@ m_PackageAssets:
         - 2.1.1
         - 2.1.3
         - 2.1.4
+        - 2.1.5
+        - 2.1.6
+        - 2.2.0-preview.1
+        - 2.2.0-preview.2
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -748,11 +961,20 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.3
         - 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.2.0-pre.1
+        - 3.2.0-pre.2
+        - 4.0.0-pre.1
         compatible:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        verified: 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.2.0-pre.1
+        - 3.2.0-pre.2
+        verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -789,12 +1011,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: 1604b62e543216408311bcd1355a7a9ca1e65765
         path: 
-    - packageId: com.unity.timeline@1.4.5
+    - packageId: com.unity.timeline@1.4.7
       testable: 0
       isDirectDependency: 1
-      version: 1.4.5
+      version: 1.4.7
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.timeline@1.4.5
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -854,6 +1076,8 @@ m_PackageAssets:
         - 1.4.4
         - 1.4.5
         - 1.4.6
+        - 1.4.7
+        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -864,46 +1088,21 @@ m_PackageAssets:
         - 1.5.1-pre.2
         - 1.5.1-pre.3
         - 1.5.2
+        - 1.5.4
+        - 1.5.5
+        - 1.5.6
+        - 1.5.7
         - 1.6.0-pre.1
+        - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        - 1.6.0-pre.5
+        - 1.6.1
+        - 1.6.2
+        - 1.6.3
+        - 1.7.0-pre.1
         compatible:
-        - 1.2.6
-        - 1.2.7
-        - 1.2.9
-        - 1.2.10
-        - 1.2.11
-        - 1.2.12
-        - 1.2.13
-        - 1.2.14
-        - 1.2.15
-        - 1.2.16
-        - 1.2.17
-        - 1.2.18
-        - 1.3.0-preview.2
-        - 1.3.0-preview.3
-        - 1.3.0-preview.5
-        - 1.3.0-preview.6
-        - 1.3.0-preview.7
-        - 1.3.0
-        - 1.3.1
-        - 1.3.2
-        - 1.3.3
-        - 1.3.4
-        - 1.3.5
-        - 1.3.6
-        - 1.3.7
-        - 1.4.0-preview.1
-        - 1.4.0-preview.2
-        - 1.4.0-preview.3
-        - 1.4.0-preview.5
-        - 1.4.0-preview.6
-        - 1.4.0-preview.7
-        - 1.4.0
-        - 1.4.1
-        - 1.4.2
-        - 1.4.3
-        - 1.4.4
-        - 1.4.5
-        - 1.4.6
+        - 1.4.7
+        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -914,8 +1113,19 @@ m_PackageAssets:
         - 1.5.1-pre.2
         - 1.5.1-pre.3
         - 1.5.2
+        - 1.5.4
+        - 1.5.5
+        - 1.5.6
+        - 1.5.7
         - 1.6.0-pre.1
-        verified: 1.4.6
+        - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        - 1.6.0-pre.5
+        - 1.6.1
+        - 1.6.2
+        - 1.6.3
+        - 1.7.0-pre.1
+        verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
         version: 1.0.0
@@ -952,20 +1162,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637418317950000000
+      datePublishedTicks: 637516874380000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-        revision: dcd1bee062422cccd8f2d402f1a7877d07fa48f0
+        revision: 66f96ddbbc76f565093e1e5e5d3d322d28acc7d7
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1023,12 +1233,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arcore@4.0.12
+    - packageId: com.unity.xr.arcore@4.1.7
       testable: 0
       isDirectDependency: 1
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arcore@4.0.12
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arcore@4.1.7
       assetPath: Packages/com.unity.xr.arcore
       name: com.unity.xr.arcore
       displayName: ARCore XR Plugin
@@ -1041,7 +1251,7 @@ m_PackageAssets:
       description: 'Provides native Google ARCore integration for use with Unity''s
         multi-platform XR API.
 
-        =Supported Features=
+        Supports the following features:
 
         -Efficient
         Background Rendering
@@ -1053,7 +1263,9 @@ m_PackageAssets:
         -Anchors
 
         -Hit
-        Testing'
+        Testing
+
+        -Occlusion'
       status: 4
       errors: []
       versions:
@@ -1071,6 +1283,7 @@ m_PackageAssets:
         - 2.1.12
         - 2.1.14
         - 2.1.16
+        - 2.1.18
         - 2.2.0-preview.1
         - 2.2.0-preview.2
         - 2.2.0-preview.6
@@ -1114,6 +1327,19 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        - 5.0.0-pre.5
         compatible:
         - 1.0.0-preview.24
         - 2.0.2
@@ -1128,6 +1354,7 @@ m_PackageAssets:
         - 2.1.12
         - 2.1.14
         - 2.1.16
+        - 2.1.18
         - 2.2.0-preview.1
         - 2.2.0-preview.2
         - 2.2.0-preview.6
@@ -1171,25 +1398,37 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
-        verified: 4.0.12
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        verified: 4.1.7
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.xr.management
         version: 4.0.1
       - name: com.unity.modules.androidjni
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
-      - name: com.unity.xr.management
-        version: 4.0.1
+        version: 1.1.0
       - name: com.unity.modules.subsystems
         version: 1.0.0
       - name: com.unity.modules.jsonserialize
         version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
       - name: com.unity.modules.vr
         version: 1.0.0
       - name: com.unity.modules.physics
@@ -1219,20 +1458,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486670260000000
+      datePublishedTicks: 637535033640000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
-    - packageId: com.unity.xr.arfoundation@4.0.12
+    - packageId: com.unity.xr.arfoundation@4.1.7
       testable: 0
       isDirectDependency: 1
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arfoundation@4.0.12
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arfoundation@4.1.7
       assetPath: Packages/com.unity.xr.arfoundation
       name: com.unity.xr.arfoundation
       displayName: AR Foundation
@@ -1274,6 +1513,7 @@ m_PackageAssets:
         - 2.1.10
         - 2.1.14
         - 2.1.16
+        - 2.1.18
         - 2.2.0-preview.2
         - 2.2.0-preview.3
         - 2.2.0-preview.6
@@ -1314,6 +1554,19 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        - 5.0.0-pre.5
         compatible:
         - 1.0.0-preview.12
         - 1.0.0-preview.13
@@ -1338,6 +1591,7 @@ m_PackageAssets:
         - 2.1.10
         - 2.1.14
         - 2.1.16
+        - 2.1.18
         - 2.2.0-preview.2
         - 2.2.0-preview.3
         - 2.2.0-preview.6
@@ -1378,23 +1632,35 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
-        verified: 4.0.12
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        verified: 4.1.7
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.xr.management
         version: 4.0.1
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
-      - name: com.unity.xr.management
-        version: 4.0.1
+        version: 1.1.0
       - name: com.unity.modules.subsystems
         version: 1.0.0
       - name: com.unity.modules.jsonserialize
         version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
       - name: com.unity.modules.vr
         version: 1.0.0
       - name: com.unity.modules.physics
@@ -1424,20 +1690,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486671750000000
+      datePublishedTicks: 637535033760000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -1485,7 +1751,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -1533,7 +1799,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1581,7 +1847,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1629,7 +1895,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1677,7 +1943,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -1729,7 +1995,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -1785,7 +2051,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -1834,7 +2100,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -1882,7 +2148,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -1930,7 +2196,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -1978,7 +2244,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2026,7 +2292,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2074,7 +2340,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2126,7 +2392,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2174,7 +2440,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2230,7 +2496,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2282,7 +2548,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -2330,7 +2596,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -2394,7 +2660,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -2442,7 +2708,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -2498,7 +2764,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -2546,7 +2812,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2602,7 +2868,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2658,7 +2924,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2714,7 +2980,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -2786,7 +3052,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -2838,7 +3104,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -2898,7 +3164,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -2960,7 +3226,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3008,7 +3274,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3068,7 +3334,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3120,7 +3386,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielementsnative
+      resolvedPath: C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielementsnative
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3174,12 +3440,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arsubsystems@4.0.12
+    - packageId: com.unity.xr.arsubsystems@4.1.7
       testable: 0
       isDirectDependency: 0
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arsubsystems@4.0.12
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
       assetPath: Packages/com.unity.xr.arsubsystems
       name: com.unity.xr.arsubsystems
       displayName: AR Subsystems
@@ -3190,7 +3456,7 @@ m_PackageAssets:
       category: 
       type: 
       description: Contains definitions for AR Subsystems. This package is a dependency
-        of provider packages as well as AR Foundation
+        of provider packages, as well as AR Foundation.
       status: 4
       errors: []
       versions:
@@ -3204,6 +3470,7 @@ m_PackageAssets:
         - 2.1.3
         - 2.1.14
         - 2.1.16
+        - 2.1.18
         - 2.2.0-preview.2
         - 2.2.0-preview.3
         - 2.2.0-preview.6
@@ -3244,32 +3511,43 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        - 5.0.0-pre.5
         compatible:
-        - 4.0.8
-        - 4.0.9
-        - 4.0.10
-        - 4.0.12
-        - 4.1.0-preview.1
-        - 4.1.0-preview.2
-        - 4.1.0-preview.3
-        - 4.1.0-preview.5
-        - 4.1.0-preview.6
-        - 4.1.0-preview.7
-        - 4.1.0-preview.9
-        - 4.1.0-preview.10
-        - 4.1.0-preview.11
-        - 4.1.0-preview.12
-        - 4.1.0-preview.13
-        - 4.1.1
-        - 4.1.3
-        - 4.1.5
-        verified: 4.0.12
+        - 4.1.7
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        verified: 4.1.7
       dependencies:
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
       resolvedDependencies:
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords:
       - subsystem
       - XR
@@ -3286,13 +3564,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486668120000000
+      datePublishedTicks: 637535033380000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
     - packageId: com.unity.xr.management@4.0.1
       testable: 0
@@ -3356,6 +3634,14 @@ m_PackageAssets:
         - 4.0.0-pre.2
         - 4.0.0-pre.3
         - 4.0.1
+        - 4.0.3
+        - 4.0.5
+        - 4.0.6
+        - 4.0.7
+        - 4.1.0-pre.1
+        - 4.1.0-pre.2
+        - 4.1.0
+        - 4.2.0
         compatible:
         - 3.2.13
         - 3.2.15
@@ -3365,7 +3651,15 @@ m_PackageAssets:
         - 4.0.0-pre.2
         - 4.0.0-pre.3
         - 4.0.1
-        verified: 3.2.17
+        - 4.0.3
+        - 4.0.5
+        - 4.0.6
+        - 4.0.7
+        - 4.1.0-pre.1
+        - 4.1.0-pre.2
+        - 4.1.0
+        - 4.2.0
+        verified: 4.0.7
       dependencies:
       - name: com.unity.modules.subsystems
         version: 1.0.0
@@ -3391,7 +3685,7 @@ m_PackageAssets:
       - name: com.unity.xr.legacyinputhelpers
         version: 2.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
       keywords:
       - xr
       - sdk
@@ -3481,6 +3775,71 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
+    - packageId: com.unity.nuget.mono-cecil@1.10.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.10.1
+      source: 1
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.nuget.mono-cecil@1.10.1
+      assetPath: Packages/com.unity.nuget.mono-cecil
+      name: com.unity.nuget.mono-cecil
+      displayName: Mono Cecil
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+        This
+        package is intended for internal Unity use only. Most Unity users will be
+        better suite using the existing community tooling.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Mono.Cecil.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.6-preview.2
+        - 1.0.0-preview.1
+        - 1.10.0-preview.1
+        - 1.10.1-preview.1
+        - 1.10.1
+        - 1.10.2
+        compatible:
+        - 0.1.6-preview.2
+        - 1.0.0-preview.1
+        - 1.10.0-preview.1
+        - 1.10.1-preview.1
+        - 1.10.1
+        - 1.10.2
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637437477070000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+        revision: c1b254abc76d079830441168142797a454b48735
+        path: 
     - packageId: com.unity.xr.legacyinputhelpers@2.1.7
       testable: 0
       isDirectDependency: 0
@@ -3528,9 +3887,11 @@ m_PackageAssets:
         - 2.1.4
         - 2.1.6
         - 2.1.7
+        - 2.1.8
         compatible:
         - 2.1.7
-        verified: 2.1.7
+        - 2.1.8
+        verified: 2.1.8
       dependencies:
       - name: com.unity.modules.vr
         version: 1.0.0
@@ -3573,12 +3934,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
         revision: b2024928b8140a10ad43aeb5824d2f08bb8796bc
         path: 
-    - packageId: com.unity.subsystemregistration@1.0.6
+    - packageId: com.unity.subsystemregistration@1.1.0
       testable: 0
       isDirectDependency: 0
-      version: 1.0.6
+      version: 1.1.0
       source: 1
-      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.subsystemregistration@1.0.6
+      resolvedPath: E:\Current Projects\AR Game\AR_Game\Super GO Battle!\Library\PackageCache\com.unity.subsystemregistration@1.1.0
       assetPath: Packages/com.unity.subsystemregistration
       name: com.unity.subsystemregistration
       displayName: Subsystem Registration
@@ -3599,12 +3960,20 @@ m_PackageAssets:
         - 1.0.5
         - 1.0.6
         - 1.1.0
+        - 1.1.1
         compatible:
         - 1.0.6
         - 1.1.0
-        verified: 1.1.0
-      dependencies: []
-      resolvedDependencies: []
+        - 1.1.1
+        verified: 1.1.1
+      dependencies:
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords:
       - subsystem
       - registration
@@ -3621,15 +3990,29 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637056434700000000
+      datePublishedTicks: 637314426150000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: git@github.cds.internal.unity3d.com:unity/com.unity.subsystemregistration.git
-        revision: 0b4157c6c0a160c51e74ead305aee77e6f29527d
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
+        revision: 72584ba5248fbe79e560e795ad819f876954fceb
         path: 
   m_LocalPackages:
-    m_LocalFileStatus: []
+    m_LocalFileStatus:
+    - m_FilePath: C:\Users\isaac\Downloads\arcore-unity-extensions-1.28.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\isaac\Downloads\arcore-unity-extensions-1.28.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637726543284458935
+      m_Hash: 3026485475
 m_ProjectPath: E:/Current Projects/AR Game/AR_Game/Super GO Battle!/Packages
-m_EditorVersion: 2020.2.3f1 (8ff31bc5bf5b)
+m_EditorVersion: 2020.3.6f1 (338bb68529b2)

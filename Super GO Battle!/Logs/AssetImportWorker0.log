@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 8077 MB
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 8077 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,159 +15,1090 @@ E:/Current Projects/AR Game/AR_Game/Super GO Battle!
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60943
+54787
 Successfully changed project path to: E:/Current Projects/AR Game/AR_Game/Super GO Battle!
 E:/Current Projects/AR Game/AR_Game/Super GO Battle!
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 63.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 98.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Current Projects/AR Game/AR_Game/Super GO Battle!/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Renderer: Intel(R) HD Graphics 630 (ID=0x591b)
     Vendor:   
-    VRAM:     2987 MB
-    Driver:   30.0.14.9613
+    VRAM:     4038 MB
+    Driver:   23.20.16.4849
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003016 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004618 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 38.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 46.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.590 seconds
+- Completed reload, in  5.978 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000785 seconds.
+Registered in 0.751478 seconds.
 Begin MonoManager ReloadAssembly
-Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
-
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.262 seconds
+- Completed reload, in  3.777 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1544 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.0 MB.
-System memory in use after: 89.1 MB.
+Unloading 1862 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 1996.
-Total: 2.696700 ms (FindLiveObjects: 0.533100 ms CreateObjectMapping: 0.256500 ms MarkObjects: 1.820000 ms  DeleteObjects: 0.084900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/AR/DataReader.cs
-  artifactKey: Guid(bf9532fbbca01c24e97863702851e2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AR/DataReader.cs using Guid(bf9532fbbca01c24e97863702851e2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6cb33fd717e763745b30955a19904e') in 0.055314 seconds
-  Import took 0.060433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000612 seconds.
-  path: Assets/Scripts/AR/Enemy.cs
-  artifactKey: Guid(a3fdaf3be63887f48abfd9ad6921ff5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AR/Enemy.cs using Guid(a3fdaf3be63887f48abfd9ad6921ff5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd41386ee0f262528bc9644b56513d17') in 0.011352 seconds
-  Import took 0.015587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Scripts/Nests/NestNavigator.cs
-  artifactKey: Guid(1aeba5f66a9a79447bc6a5a94b9284ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Nests/NestNavigator.cs using Guid(1aeba5f66a9a79447bc6a5a94b9284ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad310883c6ddf3d4df4bc094d1526d0') in 0.008248 seconds
-  Import took 0.013522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Scripts/AR/PlayerScript.cs
-  artifactKey: Guid(1f0971012f94fa545bbf3d6793df983f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AR/PlayerScript.cs using Guid(1f0971012f94fa545bbf3d6793df983f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2a0386598fb1ea42b7b1573372193b') in 0.012885 seconds
-  Import took 0.018180 seconds .
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2316.
+Total: 2.452400 ms (FindLiveObjects: 0.250800 ms CreateObjectMapping: 0.099800 ms MarkObjects: 2.068200 ms  DeleteObjects: 0.031100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001287 seconds.
+Registered in 0.010030 seconds.
 Begin MonoManager ReloadAssembly
-Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
-
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.124 seconds
+- Completed reload, in 19.838 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1535 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.7 MB.
-System memory in use after: 88.8 MB.
+Unloading 1851 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.4 MB.
+System memory in use after: 104.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1998.
-Total: 2.262400 ms (FindLiveObjects: 0.222500 ms CreateObjectMapping: 0.069400 ms MarkObjects: 1.886100 ms  DeleteObjects: 0.083300 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2320.
+Total: 3.468200 ms (FindLiveObjects: 0.411900 ms CreateObjectMapping: 0.104500 ms MarkObjects: 2.916400 ms  DeleteObjects: 0.033100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 57.632804 seconds.
-  path: Assets/Scenes/Nests
-  artifactKey: Guid(636df379b7d0cd44794eca95aa6a1a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nests using Guid(636df379b7d0cd44794eca95aa6a1a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39809c8cc1e8983e9438f8a8defecbec') in 0.016015 seconds
-  Import took 0.022014 seconds .
+  path: Assets/Go Battle
+  artifactKey: Guid(cee5555c02581e24895ccc67a9aeeb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle using Guid(cee5555c02581e24895ccc67a9aeeb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043f76e474bc29d4333d5f1c216830c9') in 1.138387 seconds
+  Import took 1.472389 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.197424 seconds.
-  path: Assets/Scenes/AR
-  artifactKey: Guid(0109d4915fb08aa478092f0216feac5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AR using Guid(0109d4915fb08aa478092f0216feac5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd706d8641417e0df92f356391b7ba1b0') in 0.013040 seconds
-  Import took 0.017750 seconds .
+  Time since last request: 429.072174 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Scripts/SmoothingFilter
+  artifactKey: Guid(24c9ddd0c9d3e9245b1e6a4fa475b61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Scripts/SmoothingFilter using Guid(24c9ddd0c9d3e9245b1e6a4fa475b61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43d1b4fe773b48c1e48faf4db1bc7f8') in 0.017843 seconds
+  Import took 0.026398 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.013750 seconds.
-  path: Assets/Scenes/AR
-  artifactKey: Guid(0109d4915fb08aa478092f0216feac5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AR using Guid(0109d4915fb08aa478092f0216feac5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd706d8641417e0df92f356391b7ba1b0') in 0.003688 seconds
-  Import took 0.007409 seconds .
+  Time since last request: 0.030390 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Fonts/Roboto-Medium.ttf
+  artifactKey: Guid(50a50753ba3b4487e93b75cafa4a9518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Fonts/Roboto-Medium.ttf using Guid(50a50753ba3b4487e93b75cafa4a9518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab28ac698cb9aeddb042a28e79826814') in 0.555338 seconds
+  Import took 0.560170 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.142172 seconds.
-  path: Assets/Scenes/AR/EnviroTest.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AR/EnviroTest.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87bcd9702df4d88eb8ebdbfe01c5bc6e') in 0.020208 seconds
-  Import took 0.026185 seconds .
+  Time since last request: 0.129026 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_Eye1.png
+  artifactKey: Guid(ed100fb1f7f537047bdfff2fb34f6ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_Eye1.png using Guid(ed100fb1f7f537047bdfff2fb34f6ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf71794adcc0b024ba637cc4582fbf3') in 0.145857 seconds
+  Import took 0.151114 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031795 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Materials/ShadowReceiveMeshMaterial.mat
+  artifactKey: Guid(7a8eb2c81d88a483aaa62ee9ab67632c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Materials/ShadowReceiveMeshMaterial.mat using Guid(7a8eb2c81d88a483aaa62ee9ab67632c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8868196e710c7b3ac5ec54308981d4a4') in 0.050556 seconds
+  Import took 0.055322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026683 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Prefabs/ShadowReceiverMesh.prefab
+  artifactKey: Guid(c4a77cb686d5f46ef856e6875cc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Prefabs/ShadowReceiverMesh.prefab using Guid(c4a77cb686d5f46ef856e6875cc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a642ca6b94a2358a43b5ae1bf2f58e') in 0.030171 seconds
+  Import took 0.034424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028169 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/Solrock.SMD
+  artifactKey: Guid(5b07d39cc303003479977c0e29b99083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/Solrock.SMD using Guid(5b07d39cc303003479977c0e29b99083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf4eec5fc1ac95f8f70dfae69639e41') in 0.011195 seconds
+  Import took 0.016175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018006 seconds.
+  path: Assets/Go Battle/ARRealismDemos/SceneManager/Scripts
+  artifactKey: Guid(26280915d58f3f44ca751213a34c9151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/SceneManager/Scripts using Guid(26280915d58f3f44ca751213a34c9151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c55830bfeb313cc626d3b1f9522670c') in 0.008897 seconds
+  Import took 0.012991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.204942 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyA1.png
+  artifactKey: Guid(4b572d85694d9254d88f11425e68f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyA1.png using Guid(4b572d85694d9254d88f11425e68f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9b60726d4ca91b37b2fad56f34243e') in 0.027601 seconds
+  Import took 0.032260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071558 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Materials/CustomMeshMaterial.mat
+  artifactKey: Guid(dc0b1046e24fb4129ae1e1974727d1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Materials/CustomMeshMaterial.mat using Guid(dc0b1046e24fb4129ae1e1974727d1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3622d16963709c544101507a9f75cee') in 0.023402 seconds
+  Import took 0.028840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062318 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Shaders
+  artifactKey: Guid(83199ddc5d17663468e265ed65e1d7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Shaders using Guid(83199ddc5d17663468e265ed65e1d7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276886663504ef76ec8c8e0dfe261986') in 0.010371 seconds
+  Import took 0.016057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039707 seconds.
+  path: Assets/Go Battle/ARRealismDemos/AvatarLocomotion
+  artifactKey: Guid(08ca8932f885bba4984c7e821f75b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/AvatarLocomotion using Guid(08ca8932f885bba4984c7e821f75b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0829b75124b74f8b3f130a4097ca4f49') in 0.008143 seconds
+  Import took 0.012358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017496 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider
+  artifactKey: Guid(cb7681b849f7d7347b18aaa3bfba1f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider using Guid(cb7681b849f7d7347b18aaa3bfba1f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a964fe622999954404bc1ae576910f55') in 0.009127 seconds
+  Import took 0.013616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027742 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone.FBX
+  artifactKey: Guid(66f9dd615bd7a0b418ae69e4c8208cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone.FBX using Guid(66f9dd615bd7a0b418ae69e4c8208cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89febc11619240ccd02be3ee3a44e2cb') in 0.228899 seconds
+  Import took 0.233131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027307 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Textures
+  artifactKey: Guid(03b820f0284d4434eac071d4de42f049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Textures using Guid(03b820f0284d4434eac071d4de42f049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64143de66fc22ab51d0e6fb6a560d3d') in 0.009770 seconds
+  Import took 0.014032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065715 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyANor_Alpha.png
+  artifactKey: Guid(c83a15de7a26cf741b71f6b5166a9aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyANor_Alpha.png using Guid(c83a15de7a26cf741b71f6b5166a9aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841c4d7d086146f98de9fcc85256b2ac') in 0.026082 seconds
+  Import took 0.030988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030014 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyB1Id.png
+  artifactKey: Guid(e892d82170c480144acea53e0024e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyB1Id.png using Guid(e892d82170c480144acea53e0024e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cf92311fb0f585e1cd0d32a1c4636b') in 0.031663 seconds
+  Import took 0.035780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046413 seconds.
+  path: Assets/Go Battle/XR/Settings
+  artifactKey: Guid(392425a907fa4f44bb3f7ae8262c0e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/XR/Settings using Guid(392425a907fa4f44bb3f7ae8262c0e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de89efb1c0d6ed3fd749d5364ea79243') in 0.008217 seconds
+  Import took 0.012450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017661 seconds.
+  path: Assets/Go Battle/Editor/com.unity.mobile.notifications
+  artifactKey: Guid(6d8e2e3178665be488e481c57be9527e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Editor/com.unity.mobile.notifications using Guid(6d8e2e3178665be488e481c57be9527e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e055f81ebc2ed99d1a4d32aeef854e26') in 0.007829 seconds
+  Import took 0.011872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033581 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Scenes
+  artifactKey: Guid(07a2593bf0af0844b81b810bbd586dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Scenes using Guid(07a2593bf0af0844b81b810bbd586dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accfa40f0ce2df8bc5e9465401c11091') in 0.009628 seconds
+  Import took 0.013177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027282 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone_ColladaMax.DAE
+  artifactKey: Guid(394ca3f31e5ba13419283e6440c69fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone_ColladaMax.DAE using Guid(394ca3f31e5ba13419283e6440c69fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456cfc0557a974fadb642758fbece22d') in 0.102199 seconds
+  Import took 0.107087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060660 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Prefabs
+  artifactKey: Guid(95cef15d16a1d27448d93050e2e4f395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Prefabs using Guid(95cef15d16a1d27448d93050e2e4f395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272ea3dca50d639c5cd346772a5a6557') in 0.020089 seconds
+  Import took 0.023953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.115981 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/Tag.txt
+  artifactKey: Guid(99a6ec7a6c7c52a4fbd8d508b518c1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/Tag.txt using Guid(99a6ec7a6c7c52a4fbd8d508b518c1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7439d0d62b5b72eb58790af13fb1659') in 0.021389 seconds
+  Import took 0.025876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046559 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_Eye1Id.png
+  artifactKey: Guid(3c01c97638bd6db479580c72a24d4e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_Eye1Id.png using Guid(3c01c97638bd6db479580c72a24d4e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffaaa7216ec6ada83935d906cb02be5') in 0.032058 seconds
+  Import took 0.037499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049934 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Shaders/Utilities.cginc
+  artifactKey: Guid(11d5c8d5f333e43c59d02c3fa4df54e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Shaders/Utilities.cginc using Guid(11d5c8d5f333e43c59d02c3fa4df54e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfee8dc6b98c7abff86ecfcc69b31d2') in 0.013289 seconds
+  Import took 0.017712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024518 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyBNor.png
+  artifactKey: Guid(f2d605bd5add5014a96360e5b56c214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyBNor.png using Guid(f2d605bd5add5014a96360e5b56c214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8bbeb4a6ada972d9f34a19fddfecbc') in 0.028747 seconds
+  Import took 0.034379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037521 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Prefabs/ARFDepthComponents.prefab
+  artifactKey: Guid(7a8ecf3d4912445268257c5eee428c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Prefabs/ARFDepthComponents.prefab using Guid(7a8ecf3d4912445268257c5eee428c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55acd767ab39e39b235354e37774568') in 0.130351 seconds
+  Import took 0.135924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034322 seconds.
+  path: Assets/Go Battle/Prefabs/AR/Enemies/Resources/Foe.prefab
+  artifactKey: Guid(92670580bdf60fb45a051cf3a1085eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Prefabs/AR/Enemies/Resources/Foe.prefab using Guid(92670580bdf60fb45a051cf3a1085eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+ -> (artifact id: 'ed20a5456f70d6965412e21c457a14a9') in 0.133789 seconds
+  Import took 0.141163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029845 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_EyeNor.png
+  artifactKey: Guid(4729a89b6e7af7f4ba340944802fb306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_EyeNor.png using Guid(4729a89b6e7af7f4ba340944802fb306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e41d67932e156ee18c6ff261d6c5b17') in 0.030370 seconds
+  Import took 0.036059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074207 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_BodyNor.png
+  artifactKey: Guid(0123288bbf34e114aa4c9d51a99a39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_BodyNor.png using Guid(0123288bbf34e114aa4c9d51a99a39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd92dd33d5d83114a7358d6debd40d5') in 0.035864 seconds
+  Import took 0.041828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035632 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyANor.png
+  artifactKey: Guid(6068037810a64d34d846ee4d6e74bf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyANor.png using Guid(6068037810a64d34d846ee4d6e74bf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd234c9abcd77ae8e0765ebeff92cab') in 0.033976 seconds
+  Import took 0.039826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036309 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Eye1Id.png
+  artifactKey: Guid(bdf46c9521f02cd499a3b0d3bff53384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Eye1Id.png using Guid(bdf46c9521f02cd499a3b0d3bff53384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff51e39f8dad096dea632535e96dc3f') in 0.033331 seconds
+  Import took 0.038144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021808 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Prefabs/LightEsitmation.prefab
+  artifactKey: Guid(b2b2d1dd481ea43a9be17abc6e5932e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Prefabs/LightEsitmation.prefab using Guid(b2b2d1dd481ea43a9be17abc6e5932e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f8769d5e323acb5b2371fc5c6b3cc9') in 0.020310 seconds
+  Import took 0.025667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075566 seconds.
+  path: Assets/Go Battle/XR/Loaders
+  artifactKey: Guid(1d15947ee46f7a64dae3337012bc1747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/XR/Loaders using Guid(1d15947ee46f7a64dae3337012bc1747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887a77164b0fac64a5d64e2749c7b982') in 0.012857 seconds
+  Import took 0.016682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094160 seconds.
+  path: Assets/Go Battle/CombatScripts
+  artifactKey: Guid(30d23e4978992834693786694a830097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/CombatScripts using Guid(30d23e4978992834693786694a830097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabf7d888ad18b5b9da9d44a144da618') in 0.009598 seconds
+  Import took 0.013393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075697 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Body1Id.png
+  artifactKey: Guid(02b653c9ad902b840aacf3d7bb5d330c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Body1Id.png using Guid(02b653c9ad902b840aacf3d7bb5d330c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0560565036d64070bca58c3663e53294') in 0.034106 seconds
+  Import took 0.038918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029532 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyANor_Alpha.png
+  artifactKey: Guid(30d95dd947875f84fac9a4784c71b78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyANor_Alpha.png using Guid(30d95dd947875f84fac9a4784c71b78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f85ffa1c4f92da3d2f058a5aa2f51b9') in 0.018962 seconds
+  Import took 0.023392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.196254 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyBNor_Alpha.png
+  artifactKey: Guid(f27390b960b114e47a853eb51a78305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyBNor_Alpha.png using Guid(f27390b960b114e47a853eb51a78305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1f19de6ee08313a7ce02728acf7e80') in 0.033005 seconds
+  Import took 0.037762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032390 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_Eye1.png
+  artifactKey: Guid(573fadc1b8d60d94d8f97e8fc886417c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_Eye1.png using Guid(573fadc1b8d60d94d8f97e8fc886417c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4947e6ff05d9d5b042560c6d4a2be77') in 0.028421 seconds
+  Import took 0.033494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053216 seconds.
+  path: Assets/Go Battle/XR
+  artifactKey: Guid(098221daa85964542b307ccb16c1312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/XR using Guid(098221daa85964542b307ccb16c1312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41710d772b91f795f34422dd2b153da') in 0.012261 seconds
+  Import took 0.016541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017449 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Materials
+  artifactKey: Guid(a93503e0900e9dd4d900c39457e9c165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Materials using Guid(a93503e0900e9dd4d900c39457e9c165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63af8b0a26e48abd28769b4acfcc57c1') in 0.011879 seconds
+  Import took 0.015631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090490 seconds.
+  path: Assets/Go Battle/ARRealismDemos/DepthEffects
+  artifactKey: Guid(e4253ef695c156340b8662586c376954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/DepthEffects using Guid(e4253ef695c156340b8662586c376954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b8b82ae231db839a46e42f57449007') in 0.009582 seconds
+  Import took 0.016151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058274 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny
+  artifactKey: Guid(a9b27f61d6644ad499cc698ae5427c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny using Guid(a9b27f61d6644ad499cc698ae5427c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ae50348123e31a25c790112e4d7d0d') in 0.011149 seconds
+  Import took 0.014996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018185 seconds.
+  path: Assets/Go Battle/ARRealismDemos/OrientedReticle
+  artifactKey: Guid(36c4031d00faa614f81973a71f249aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/OrientedReticle using Guid(36c4031d00faa614f81973a71f249aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e36e81d457b7fbf3686f91cb61289f7') in 0.009150 seconds
+  Import took 0.014039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033609 seconds.
+  path: Assets/Go Battle/ExtensionsAssets
+  artifactKey: Guid(717539e4b6ca29c4cb2cae946e76d653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ExtensionsAssets using Guid(717539e4b6ca29c4cb2cae946e76d653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84a277d11931f0e3f353410914e5563') in 0.010168 seconds
+  Import took 0.015042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017137 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Prefabs
+  artifactKey: Guid(77c5a799bcb2ce64495a6bc4d1285bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Prefabs using Guid(77c5a799bcb2ce64495a6bc4d1285bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c8853ca0a631972185d736403ab805') in 0.004587 seconds
+  Import took 0.009565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044924 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Shaders/ShadowReceiverMeshShader.shader
+  artifactKey: Guid(e2f201f9e83ba4dbebd15edbd96d6cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Shaders/ShadowReceiverMeshShader.shader using Guid(e2f201f9e83ba4dbebd15edbd96d6cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6293dd3b08a2b157e0f4c21dd4d055') in 0.014687 seconds
+  Import took 0.019877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018300 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Shaders
+  artifactKey: Guid(872dab8cc84a3aa41bbe2cc80cd07f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Shaders using Guid(872dab8cc84a3aa41bbe2cc80cd07f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c2038c97fcdcc4b465f2b33717aa20') in 0.003841 seconds
+  Import took 0.008770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018080 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Scripts
+  artifactKey: Guid(631f6a89aff554a45b43967f22d3b533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Scripts using Guid(631f6a89aff554a45b43967f22d3b533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2c99db97d192b934f0a429e81a644d') in 0.004565 seconds
+  Import took 0.009357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043066 seconds.
+  path: Assets/Go Battle/ARRealismDemos/DemoCarousel
+  artifactKey: Guid(87ff62cdd3351d549b9d3eb802a2227f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/DemoCarousel using Guid(87ff62cdd3351d549b9d3eb802a2227f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22916daff4b3b2d0392e2d842d0702a8') in 0.011968 seconds
+  Import took 0.016713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.179924 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyANor.png
+  artifactKey: Guid(63da1dcd9ef3f5445ace79e0cbd65197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyANor.png using Guid(63da1dcd9ef3f5445ace79e0cbd65197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a489337cb63c4c4af2fbe4d4bdc0546') in 0.021510 seconds
+  Import took 0.026009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.098001 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Scenes/ColliderSettings.lighting
+  artifactKey: Guid(f297de24eb14f411484c789b9631ffdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Scenes/ColliderSettings.lighting using Guid(f297de24eb14f411484c789b9631ffdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888dc3da81df9f09492a29833894efa6') in 0.013360 seconds
+  Import took 0.018745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047931 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyBNor_Alpha.png
+  artifactKey: Guid(058b5b7305e26ec478c474be77577b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyBNor_Alpha.png using Guid(058b5b7305e26ec478c474be77577b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b8556147b06b9b236d0755c44a4107') in 0.017338 seconds
+  Import took 0.021767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057315 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyB1.png
+  artifactKey: Guid(e92be9947924b594392697fcbd9938d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyB1.png using Guid(e92be9947924b594392697fcbd9938d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1237530adca0b63744838233418f6d0f') in 0.026544 seconds
+  Import took 0.030913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038178 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_BodyNor.png
+  artifactKey: Guid(e11743a953312114abd9a486605c0a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_BodyNor.png using Guid(e11743a953312114abd9a486605c0a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a702d5b03f97864ec9e1fbef56815130') in 0.018126 seconds
+  Import took 0.022197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025248 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Materials
+  artifactKey: Guid(3822cf051fe02f24eb39473f6172f75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Materials using Guid(3822cf051fe02f24eb39473f6172f75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f428842be77f8be27c2c3642e9cc9a60') in 0.004030 seconds
+  Import took 0.007896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018813 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Scripts
+  artifactKey: Guid(5efb60a25015317489e10fd0ade49aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Scripts using Guid(5efb60a25015317489e10fd0ade49aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2825ed92761c7b5a98febdababa5021') in 0.003702 seconds
+  Import took 0.008126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023749 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyB1.png
+  artifactKey: Guid(7b210b6f6ffbe7446bade2b1f8617635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyB1.png using Guid(7b210b6f6ffbe7446bade2b1f8617635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c3a5255fd251ee3632af2d58f01704') in 0.017209 seconds
+  Import took 0.021398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046652 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyA1Id.png
+  artifactKey: Guid(de2b216c703e4d948947d9693b300e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyA1Id.png using Guid(de2b216c703e4d948947d9693b300e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbc1cbb02d796ecf43f02fefb628ce2') in 0.032822 seconds
+  Import took 0.036604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083214 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Prefabs
+  artifactKey: Guid(9fa0570dff94cb24b850737f85dcde68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Prefabs using Guid(9fa0570dff94cb24b850737f85dcde68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0faf5f3ab144c4b48a65d47bd82b3657') in 0.004226 seconds
+  Import took 0.009108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040086 seconds.
+  path: Assets/Go Battle/ARRealismDemos/AvatarLocomotion/Scripts
+  artifactKey: Guid(608eccb0d9ce33045997a04c30314f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/AvatarLocomotion/Scripts using Guid(608eccb0d9ce33045997a04c30314f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f926240b5a46b132dc853a6874a381df') in 0.004118 seconds
+  Import took 0.008760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055542 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Collider/Shaders/ColliderShader.shader
+  artifactKey: Guid(01f6d34cfc1a04e72b71ff7f8e5534a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Collider/Shaders/ColliderShader.shader using Guid(01f6d34cfc1a04e72b71ff7f8e5534a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbb438991d202a49c0535c8e084aafe') in 0.012793 seconds
+  Import took 0.017551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.089389 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Body1.png
+  artifactKey: Guid(4f186b5223218074eba6309c5473df0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Body1.png using Guid(4f186b5223218074eba6309c5473df0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e157b8c3fe087347616bef5a52a2bb0') in 0.023412 seconds
+  Import took 0.028882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049169 seconds.
+  path: Assets/Go Battle/ExtensionsAssets/Runtime/RuntimeConfig.asset
+  artifactKey: Guid(1bc5aea088e05b8438fb92cb044a7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ExtensionsAssets/Runtime/RuntimeConfig.asset using Guid(1bc5aea088e05b8438fb92cb044a7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8902dd29318124330de410a2c45e515') in 0.019823 seconds
+  Import took 0.024981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017179 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Fonts
+  artifactKey: Guid(2cf730edbe735274ea0811741231966e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Fonts using Guid(2cf730edbe735274ea0811741231966e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789ac281add2d29af12ab5731d9dfceb') in 0.009851 seconds
+  Import took 0.015179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035878 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Materials/GreenMesh.mat
+  artifactKey: Guid(21a99eb6ee4e94e36a16a7c8f935f861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Materials/GreenMesh.mat using Guid(21a99eb6ee4e94e36a16a7c8f935f861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefdb567be21f774746ac2090b37e23e') in 0.026767 seconds
+  Import took 0.030666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022549 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images
+  artifactKey: Guid(b0c50c9287978134f83c936d4c967c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images using Guid(b0c50c9287978134f83c936d4c967c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeae7a1d0af28338ab165be65ad965b') in 0.008591 seconds
+  Import took 0.013945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024975 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_BodyNor_Alpha.png
+  artifactKey: Guid(815376fe82ac0b04e890db7971a3c2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_BodyNor_Alpha.png using Guid(815376fe82ac0b04e890db7971a3c2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1dfad88a8d706585b058879852a3552') in 0.026077 seconds
+  Import took 0.029992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050374 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Body1Id.png
+  artifactKey: Guid(cdde95fcb96dfd74e937e96025270bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Body1Id.png using Guid(cdde95fcb96dfd74e937e96025270bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d7987b7e4263d449b8dcccbf9a0303') in 0.018908 seconds
+  Import took 0.023629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.186805 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Materials/BlueMesh.mat
+  artifactKey: Guid(9e15ad6b69a3a405bbd50ffed065c45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Materials/BlueMesh.mat using Guid(9e15ad6b69a3a405bbd50ffed065c45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a41406350bfef5b028de0a42c0084cd') in 0.021834 seconds
+  Import took 0.026709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052204 seconds.
+  path: Assets/Go Battle/ARRealismDemos/PointCloud/Scripts
+  artifactKey: Guid(17cfe52f4730e554ca1aacfded0cd778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/PointCloud/Scripts using Guid(17cfe52f4730e554ca1aacfded0cd778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5b7a5f7cea4d896a95a5896a2cae6e') in 0.004229 seconds
+  Import took 0.007894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083228 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyA1.png
+  artifactKey: Guid(aed7197fe5f27f440b6926fa4c1e649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyA1.png using Guid(aed7197fe5f27f440b6926fa4c1e649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1a9d3c40bd7fd4d8e60f07c57bf4fd') in 0.022672 seconds
+  Import took 0.026862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028354 seconds.
+  path: Assets/Go Battle/ARRealismDemos/OrientedReticle/Scripts
+  artifactKey: Guid(558dfeff82b842241a033761d5b57163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/OrientedReticle/Scripts using Guid(558dfeff82b842241a033761d5b57163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '479fb826c9415e8613b1910598ac8b7d') in 0.003937 seconds
+  Import took 0.007748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.108422 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/Solrock_ColladaMax.DAE
+  artifactKey: Guid(34e7ad3b22c63e546b6c479eba6c6b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/Solrock_ColladaMax.DAE using Guid(34e7ad3b22c63e546b6c479eba6c6b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f8cf086438e2fb13450941860a6a90') in 0.069173 seconds
+  Import took 0.073513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023109 seconds.
+  path: Assets/Go Battle/ARRealismDemos/SceneManager
+  artifactKey: Guid(1aefb21ee414848468ee184decdae340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/SceneManager using Guid(1aefb21ee414848468ee184decdae340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69921b6c9f1aec4b4e7e4ae53862df0') in 0.008682 seconds
+  Import took 0.012625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038569 seconds.
+  path: Assets/Go Battle/Plugins
+  artifactKey: Guid(35522d9261d44714281758921f4ea4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Plugins using Guid(35522d9261d44714281758921f4ea4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a5bf1de32ef32b6ef7953f5c3443a5') in 0.007823 seconds
+  Import took 0.011573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043154 seconds.
+  path: Assets/Go Battle/ExtensionsAssets/Runtime
+  artifactKey: Guid(d203d29335a8d30489fe939622dc61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ExtensionsAssets/Runtime using Guid(d203d29335a8d30489fe939622dc61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c0f15976e285bb90114b2a584125ec') in 0.009138 seconds
+  Import took 0.013081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046565 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyB1Id.png
+  artifactKey: Guid(0738046cd42c2164192de55bee40bc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyB1Id.png using Guid(0738046cd42c2164192de55bee40bc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7809652138a913e50b0ff545d109b4') in 0.023108 seconds
+  Import took 0.027207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029922 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Eye1.png
+  artifactKey: Guid(4f2676b9f6d16c44b8118d4b00c7508c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Eye1.png using Guid(4f2676b9f6d16c44b8118d4b00c7508c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc69e6c09593fe973437d07c74d71a8') in 0.025856 seconds
+  Import took 0.030126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030135 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_EyeNor.png
+  artifactKey: Guid(094e77dba8f9ce44e8d51d83f07c3620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_EyeNor.png using Guid(094e77dba8f9ce44e8d51d83f07c3620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a95095ac0562517643b87e0078edc2b') in 0.025691 seconds
+  Import took 0.031161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026682 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Eye1Id.png
+  artifactKey: Guid(0a2ff7a9e6c85854488d857a6d29a740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_Eye1Id.png using Guid(0a2ff7a9e6c85854488d857a6d29a740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9de773a04e526c0c3199d9e48cc517') in 0.014988 seconds
+  Import took 0.019254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019643 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Scripts/Editor
+  artifactKey: Guid(4104d18de57b93947a4dcb2e7bb98bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Scripts/Editor using Guid(4104d18de57b93947a4dcb2e7bb98bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad878b0f548e44df3ca75181836766c1') in 0.010227 seconds
+  Import took 0.014655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.206086 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Body1.png
+  artifactKey: Guid(a412382e07b255546893bb8d9f9e9047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Body1.png using Guid(a412382e07b255546893bb8d9f9e9047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6239c295913535f89a1f839ef760b6d2') in 0.024412 seconds
+  Import took 0.029133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060731 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_Eye1Id.png
+  artifactKey: Guid(870e0ee776edd4f4d9c9e8cd7a658cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_Eye1Id.png using Guid(870e0ee776edd4f4d9c9e8cd7a658cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782b1b6165a6a6c927281ee5dc512a08') in 0.016995 seconds
+  Import took 0.020973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076846 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone.SMD
+  artifactKey: Guid(ecb148f2399eb2e479763e704e86461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/Lunatone.SMD using Guid(ecb148f2399eb2e479763e704e86461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afdd95eeb62b6efc2c31dccd90b7ece') in 0.004211 seconds
+  Import took 0.007959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076292 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyBNor.png
+  artifactKey: Guid(53018fcf7cd427c4b9e9d04167908122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images/pm0338_00_BodyBNor.png using Guid(53018fcf7cd427c4b9e9d04167908122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff28671efdd08f7b1f2e5ffc9a9090d0') in 0.022514 seconds
+  Import took 0.027085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024244 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny
+  artifactKey: Guid(743a288e77ff7b646aa2ca40f21805f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny using Guid(743a288e77ff7b646aa2ca40f21805f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc011394c86bff621d191fb2e264133') in 0.003948 seconds
+  Import took 0.007360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016386 seconds.
+  path: Assets/Go Battle/ARRealismDemos/DemoCarousel/Scripts
+  artifactKey: Guid(82a3a40f9cd3ed74b8eec003c40412ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/DemoCarousel/Scripts using Guid(82a3a40f9cd3ed74b8eec003c40412ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad87cc8422a3da75ab8ac71e3a2e9f4') in 0.004327 seconds
+  Import took 0.009083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048175 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Eye1.png
+  artifactKey: Guid(649aee51c3532e2478ea0bd41b17324b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_Eye1.png using Guid(649aee51c3532e2478ea0bd41b17324b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbfd8cc3f51fec5edbe0063d4d1ab5c') in 0.021734 seconds
+  Import took 0.026397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.122647 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_EyeNor.png
+  artifactKey: Guid(1e8cde5a45275c24dad06334af15e0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images_shiny/pm0337_00_EyeNor.png using Guid(1e8cde5a45275c24dad06334af15e0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d8071e543142d71d57f7f952a76370') in 0.012115 seconds
+  Import took 0.016527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045311 seconds.
+  path: Assets/Go Battle/Plugins/Android/proguard-user.txt
+  artifactKey: Guid(8fc48944ccd6ac144b7e6bb70945f5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Plugins/Android/proguard-user.txt using Guid(8fc48944ccd6ac144b7e6bb70945f5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48de35790d95a83c506b578f21f161d9') in 0.014231 seconds
+  Import took 0.018242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044829 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_BodyNor_Alpha.png
+  artifactKey: Guid(5b389c3c98e23df43b6dd61e05834fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Lunatone/images/pm0337_00_BodyNor_Alpha.png using Guid(5b389c3c98e23df43b6dd61e05834fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc4a5dab33f68f104d3cdb914593529') in 0.017932 seconds
+  Import took 0.023594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063212 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Materials/RedMesh.mat
+  artifactKey: Guid(450a9f7387f3a433d967d9db09dd70c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Materials/RedMesh.mat using Guid(450a9f7387f3a433d967d9db09dd70c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b7b626d3a218816db2363d90704202') in 0.023680 seconds
+  Import took 0.029642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023782 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Materials
+  artifactKey: Guid(c9830a0848908c148b07e740a0cf7a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Materials using Guid(c9830a0848908c148b07e740a0cf7a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5e05fb32c9951028b27318ec394101') in 0.010398 seconds
+  Import took 0.014823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029576 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/Solrock.FBX
+  artifactKey: Guid(2589496f41cdc7e45b5c560dbe4407e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/Solrock.FBX using Guid(2589496f41cdc7e45b5c560dbe4407e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f3cd2c53648b02c4963081126cb154') in 0.060972 seconds
+  Import took 0.064728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046995 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh
+  artifactKey: Guid(049b1251755263f43ad193224d8cd2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh using Guid(049b1251755263f43ad193224d8cd2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a559ef6510c1d5067ccf9ad00dd490') in 0.008267 seconds
+  Import took 0.013938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023308 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/Tag.txt
+  artifactKey: Guid(50069590d01d6a94ca341c08a5182827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/Tag.txt using Guid(50069590d01d6a94ca341c08a5182827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8add77553db8c455034d623bd883c822') in 0.009965 seconds
+  Import took 0.014073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043040 seconds.
+  path: Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Shaders
+  artifactKey: Guid(100ce8a1ea1e03f40924f207792595b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/ScreenSpaceDepthMesh/Shaders using Guid(100ce8a1ea1e03f40924f207792595b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce115ecc0b48d8254b3f58fdc673fcf2') in 0.003932 seconds
+  Import took 0.007589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016507 seconds.
+  path: Assets/Go Battle/ARRealismDemos/PointCloud
+  artifactKey: Guid(0e35f9778369c364ca816df6753f355d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/PointCloud using Guid(0e35f9778369c364ca816df6753f355d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc447ad80e86b859f9039749e676a3e6') in 0.008636 seconds
+  Import took 0.012658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056604 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_EyeNor.png
+  artifactKey: Guid(9e66fe1041fa7c84cb37d73ab54a5296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_EyeNor.png using Guid(9e66fe1041fa7c84cb37d73ab54a5296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be74e62619ef9ae7ca0f82dc9f926856') in 0.016570 seconds
+  Import took 0.020934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.082610 seconds.
+  path: Assets/Go Battle/Prefabs/AR/Enemies/Resources/Opponent.prefab
+  artifactKey: Guid(abad83338740b0c4dbdc03e612381802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Prefabs/AR/Enemies/Resources/Opponent.prefab using Guid(abad83338740b0c4dbdc03e612381802) Importer(815301076,1909f56bfc062723c751e8b465ee728b) SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/BaseClasses/GameObject.cpp line 1259]
+
+ -> (artifact id: '5d8107ea8dd8b9e9aedad59ef928c468') in 0.043673 seconds
+  Import took 0.048592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025531 seconds.
+  path: Assets/Go Battle/ARRealismDemos/DepthEffects/Scripts
+  artifactKey: Guid(8e55c4de687d82d4784078e81b2ddcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/DepthEffects/Scripts using Guid(8e55c4de687d82d4784078e81b2ddcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d980cb9f95fe4f3ac43ab28ca8a6a6') in 0.003964 seconds
+  Import took 0.009463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079916 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Shaders/ARCoreDepth.cginc
+  artifactKey: Guid(470a1553a0ce241dbb8ec05ba16a98ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Shaders/ARCoreDepth.cginc using Guid(470a1553a0ce241dbb8ec05ba16a98ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f35734a0543bde6cce18edc5e72ccdd') in 0.014330 seconds
+  Import took 0.017934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025339 seconds.
+  path: Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyA1Id.png
+  artifactKey: Guid(fc7eb417641592c4981777a45795a15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Models/Placeholders/Solrock/images_shiny/pm0338_00_BodyA1Id.png using Guid(fc7eb417641592c4981777a45795a15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79251759992d9f28fed7f60181729913') in 0.019034 seconds
+  Import took 0.022666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026359 seconds.
+  path: Assets/Go Battle/ARRealismDemos/Common/Textures/button_oval.png
+  artifactKey: Guid(50e4e9aed7b514a84becc51889a80b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/ARRealismDemos/Common/Textures/button_oval.png using Guid(50e4e9aed7b514a84becc51889a80b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0123d266c6b3268feb9c3259ada436') in 0.048425 seconds
+  Import took 0.052780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068808 seconds.
+  path: Assets/Go Battle/Plugins/Android
+  artifactKey: Guid(b3408eabce58bad4bab4429845692a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go Battle/Plugins/Android using Guid(b3408eabce58bad4bab4429845692a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aff68d2fa9953c724c1dc9f97fd4ee5') in 0.009115 seconds
+  Import took 0.012581 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010578 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.072 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.3 MB.
+System memory in use after: 122.4 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2387.
+Total: 10.081200 ms (FindLiveObjects: 0.849100 ms CreateObjectMapping: 0.134600 ms MarkObjects: 7.947400 ms  DeleteObjects: 1.145900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 403.497908 seconds.
+  path: Assets/Isaac/ARFDepthComponents Variant.prefab
+  artifactKey: Guid(00c31b363ce8484408410b865004b94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isaac/ARFDepthComponents Variant.prefab using Guid(00c31b363ce8484408410b865004b94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1eea16ccd20e4f7dc5260e5c58619f') in 0.165619 seconds
+  Import took 0.170782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.087726 seconds.
+  path: Assets/arcore-unity-extensions-1.27.0/package
+  artifactKey: Guid(44caaf4cc281ad84fa73acd9d63e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/arcore-unity-extensions-1.27.0/package using Guid(44caaf4cc281ad84fa73acd9d63e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1261229567a3008320f4a085f668f47d') in 0.016095 seconds
+  Import took 0.022074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.277069 seconds.
+  path: Assets/Isaac/Canvas.prefab
+  artifactKey: Guid(25f576239e93ef24f8eea332624c0b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isaac/Canvas.prefab using Guid(25f576239e93ef24f8eea332624c0b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5d151da8bf21e4d4e9bca12d2a1f64') in 0.033575 seconds
+  Import took 0.040917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Isaac/LightEsitmation Variant.prefab
+  artifactKey: Guid(cec18b748c59a7042bc9f912c8c3ec97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isaac/LightEsitmation Variant.prefab using Guid(cec18b748c59a7042bc9f912c8c3ec97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbcb3619fab0fa84ad906e8c93a5fab') in 0.011753 seconds
+  Import took 0.015953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Isaac/ColliderMesh.prefab
+  artifactKey: Guid(a509f7a058f75e448899067243e5166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isaac/ColliderMesh.prefab using Guid(a509f7a058f75e448899067243e5166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c2334883bc149f15f499a8df8c62be') in 0.022165 seconds
+  Import took 0.026889 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.587184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.781 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.3 MB.
+System memory in use after: 122.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2393.
+Total: 2.544700 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.139300 ms MarkObjects: 2.107000 ms  DeleteObjects: 0.030200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
